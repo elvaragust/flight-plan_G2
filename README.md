@@ -26,7 +26,11 @@
 
 ## Vika 1
 ### Vika 1 - Dagur 1
-texti
+#### Morgun
+- texti
+#### Lokdags
+- texti
+
 ### Vika 1 - Dagur 2
 texti
 ### Vika 1 - Dagur 3
