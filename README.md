@@ -26,10 +26,10 @@
 
 ## Vika 1
 ### Vika 1 - Dagur 1
-#### Morgun
-- texti
-#### Lokdags
-- texti
+- Morgun
+  - texti
+- Lokdags
+  - texti
 
 ### Vika 1 - Dagur 2
 texti
