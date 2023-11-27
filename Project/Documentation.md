@@ -27,9 +27,9 @@
 ## Vika 1
 ### Vika 1 - Dagur 1
 - Morgun
-  - Uppseting a Vscode og Github
-- Lokdags
   - 
+- Lokdags
+  - Uppseting a Vscode og Github
 
 ### Vika 1 - Dagur 2
 texti
