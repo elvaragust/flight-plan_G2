@@ -54,7 +54,7 @@
   - [ ] Skipta köflum á milli okkar
 - Lokdags
   - [x] Búa til beinagrind
-  - [x] Skita köflum á milli okkar
+  - [x] Skipta köflum á milli okkar
   - [x] User stories 1 og 2 og scenarios 1 og 2 - Margrét
   - [x] User stories 3 og 6 og scenarios 3 og 6 - Guttormur
   - [x] User stories 4 og scenarios 4 - Þóra
