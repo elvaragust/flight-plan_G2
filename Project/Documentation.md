@@ -13,6 +13,8 @@
 
 -----
 ## Efnisyfirlit
+<details><summary>Ýta hér</summary>
+
 - [flight-plan\_G2](#flight-plan_g2)
 - [Dagbók](#dagbók)
   - [Vika 1](#vika-1)
@@ -33,7 +35,8 @@
     - [Vika 3 - Dagur 3](#vika-3---dagur-3)
     - [Vika 3 - Dagur 4](#vika-3---dagur-4)
     - [Vika 3 - Dagur 5](#vika-3---dagur-5)
-    
+</details>
+
 -----
 
 ## Vika 1
