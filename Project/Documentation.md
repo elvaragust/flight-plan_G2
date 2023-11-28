@@ -1,6 +1,8 @@
 # flight-plan_G2
 -----
 # Dagbók
+-----
+## Efnisyfirlit
 - [flight-plan\_G2](#flight-plan_g2)
 - [Dagbók](#dagbók)
   - [Vika 1](#vika-1)
