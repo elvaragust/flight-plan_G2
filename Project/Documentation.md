@@ -37,38 +37,80 @@
   - [x] Settum upp á tússtöflu yfirlit 
 
 ### Vika 1 - Dagur 2
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 ### Vika 1 - Dagur 3
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 ### Vika 1 - Dagur 4
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 ### Vika 1 - Dagur 5
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 
 -----
 
 ## Vika 2
 ### Vika 2 - Dagur 1
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 ### Vika 2 - Dagur 2
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 ### Vika 2 - Dagur 3
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 ### Vika 2 - Dagur 4
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 ### Vika 2 - Dagur 5
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 
 -----
 
 ## Vika 3
 ### Vika 3 - Dagur 1
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 ### Vika 3 - Dagur 2
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 ### Vika 3 - Dagur 3
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 ### Vika 3 - Dagur 4
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
 ### Vika 3 - Dagur 5
-texti
+- Morgunfærsla
+  - [ ]
+- Lokdags
+  - [ ]
