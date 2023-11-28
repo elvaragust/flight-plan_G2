@@ -26,10 +26,15 @@
 
 ## Vika 1
 ### Vika 1 - Dagur 1
-- Morgun
-  - 
+- Morgunfærsla
+  - [ ] Búa til Git rep og bæta alla við
+  - [ ] Kynna okkur smá Git
+  - [ ] Tengja Git við VsCode
 - Lokdags
-  - Uppseting a Vscode og Github
+  - [x] Búa til Git rep og bæta alla við
+  - [x] Kynna okkur smá Git
+  - [x] Tengja Git við VsCode
+  - [x] Settum upp á tússtöflu yfirlit 
 
 ### Vika 1 - Dagur 2
 texti
