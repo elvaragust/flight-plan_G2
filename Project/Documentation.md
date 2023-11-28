@@ -2,6 +2,16 @@
 -----
 # Dagbók
 -----
+
+- #### Mætt
+  - Elvar Ágúst Þorsteinsson
+  - Guttormur Freyr Einarsson
+  - Margrét Rún Sverrisdóttir
+  - Þóra Xue Reynisdóttir
+- #### EKKI Mætt
+  - Bryndís Sóley Jónsdóttir
+
+-----
 ## Efnisyfirlit
 - [flight-plan\_G2](#flight-plan_g2)
 - [Dagbók](#dagbók)
@@ -40,7 +50,7 @@
 
 ### Vika 1 - Dagur 2
 - Morgunfærsla
-  - [ ] Búa til beinagreind
+  - [ ] Búa til beinagrind
   - [ ] 
 - Lokdags
   - [ ]
