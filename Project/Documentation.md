@@ -10,10 +10,7 @@
   - Þóra Xue Reynisdóttir
 - #### EKKI Mætt
   - Bryndís Sóley Jónsdóttir
-<details open>
-<summary>Yfirlit</summary>
-<br>
------
+
 ## Efnisyfirlit
 - [flight-plan\_G2](#flight-plan_g2)
 - [Dagbók](#dagbók)
@@ -37,7 +34,7 @@
     - [Vika 3 - Dagur 5](#vika-3---dagur-5)
     
 -----
-</details>
+
 ## Vika 1
 ### Vika 1 - Dagur 1
 - Morgunfærsla
