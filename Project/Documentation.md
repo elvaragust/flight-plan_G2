@@ -62,7 +62,8 @@
   - [x] User stories 3 og 6 og scenarios 3 og 6 - Guttormur
   - [x] User stories 4 og scenarios 4 - Þóra
   - [x] User stoires 5 og scenarios 5 - Elvar
-  - [x] Kröfulisti - 
+  - [x] Kröfulisti -
+  - [x] Skissur (Crazy 8)
 ### Vika 1 - Dagur 3
 - Morgunfærsla
   - [ ]
