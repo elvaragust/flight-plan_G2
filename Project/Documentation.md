@@ -40,7 +40,8 @@
 
 ### Vika 1 - Dagur 2
 - Morgunfærsla
-  - [ ]
+  - [ ] Búa til beinagreind
+  - [ ] 
 - Lokdags
   - [ ]
 ### Vika 1 - Dagur 3
