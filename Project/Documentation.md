@@ -71,7 +71,10 @@
   - [ ] Vinna í User cases
   - [ ] Vinna í Class diagram
 - Lokdags
-  - [ ]
+  - [x] Klára kröfulista
+  - [x] Klára spurningalistann
+  - [ í vinnslu ] Vinna í User cases
+  - [Færðum það á morgun] Vinna í Class diagram
 ### Vika 1 - Dagur 4
 - Morgunfærsla
   - [ ]
