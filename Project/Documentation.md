@@ -66,7 +66,7 @@
   - [x] Skissur (Crazy 8)
 ### Vika 1 - Dagur 3
 - Morgunfærsla
-  - [ ] Klára í kröfulista
+  - [ ] Klára kröfulista
   - [ ] Klára spurningalistann
   - [ ] Vinna í User cases
   - [ ] Vinna í Class diagram
