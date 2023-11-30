@@ -83,7 +83,10 @@
   - [ ] Inngang
   - [ ] Lokaorð
 - Lokdags
-  - [ ] 
+  - [x] Vinna í class diagram
+  - [x] Viðtöl
+  - [Klára á morgun] Inngang
+  - [Klára á morgun ] Lokaorð
 ### Vika 1 - Dagur 5
 - Morgunfærsla
   - [ ]
