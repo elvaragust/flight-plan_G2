@@ -77,9 +77,13 @@
   - [Færðum það á morgun] Vinna í Class diagram
 ### Vika 1 - Dagur 4
 - Morgunfærsla
-  - [ ]
+  - [x] Vinna í user cases
+  - [ ] Vinna í class diagram
+  - [ ] Viðtöl
+  - [ ] Inngang
+  - [ ] Lokaorð
 - Lokdags
-  - [ ]
+  - [ ] 
 ### Vika 1 - Dagur 5
 - Morgunfærsla
   - [ ]
