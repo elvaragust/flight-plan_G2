@@ -284,6 +284,85 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 ------------------------------------------------------------------------------------------------------------
                            [B]ack    [M]ain Menu    [S]ave Plan    [D]elete Plan
 ------------------------------------------------------------------------------------------------------------
+Choose option: 4
+
+============================================================================================================
+                                   _   __        _   __   ___     _      
+                                  / | / /____ _ / | / /  /   |   (_)_____ 
+        __|__                    /  |/ // __ `//  |/ /  / /| |  / // ___/                      __|__
+  -o--o--(_)--o--o-             / /|  // /_/ // /|  /  / ___ | / // /                    -o--o--(_)--o--o-                               
+                               /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
+                                         -Planning Manager-                                                            
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+                                          Available planes
+                        Total Flight Time From Nuuk And To Reykjavik:  5:30
+
+       Name         Located        Next Available          Next Flight             Available Time Frame
+____________________________________________________________________________________________________________
+[1]  | Long Viper  | REYKJAVIK    | Available at: 12:40   | 21:30 to NUUK         | Hours: 8   Minutes: 50 |
+------------------------------------------------------------------------------------------------------------
+[2]  | Madstorm    | REYKJAVIK    | Available at: 11:20   | 19:00 to TINGWALL     | Hours: 7   Minutes: 40 |
+------------------------------------------------------------------------------------------------------------
+[3]  | Ghostcharm  | REYKJAVIK    | Available at: 13:50   | 17:20 to ÞORSHÖFN     | Hours: 3   Minutes: 30 |
+------------------------------------------------------------------------------------------------------------
+[4]  | Madstorm    | REYKJAVIK    | Available at: 10:30   | 15:00 to TINGWALL     | Hours: 4   Minutes: 30 |
+------------------------------------------------------------------------------------------------------------
+[5]  | Long Viper  | REYKJAVIK    | Available at: 11:00   | 17:20 to NUUK         | Hours: 6   Minutes: 20 |
+------------------------------------------------------------------------------------------------------------
+[6]  | Long Viper  | REYKJAVIK    | Available at: 14:20   | 18:00 to NUUK         | Hours: 3   Minutes: 40 |
+------------------------------------------------------------------------------------------------------------
+[7]  | Long Viper  | REYKJAVIK    | Available at: 12:00   | 17:20 to KULUSUK      | Hours: 5   Minutes: 20 |
+------------------------------------------------------------------------------------------------------------
+[8]  | Long Viper  | REYKJAVIK    | Available at: 11:40   | 15:00 to KULUSUK      | Hours: 3   Minutes: 20 |
+------------------------------------------------------------------------------------------------------------
+[9]  | Madstorm    | REYKJAVIK    | Available at: 13:30   | 17:20 to TINGWALL     | Hours: 3   Minutes: 50 |
+------------------------------------------------------------------------------------------------------------
+[10] | Starblitz   | REYKJAVIK    | Available at: 10:50   | 16:30 to LONGYEARBYEN | Hours: 5   Minutes: 40 |
+------------------------------------------------------------------------------------------------------------
+[11] | Starblitz   | REYKJAVIK    | Available at: 12:20   | 17:20 to LONGYEARBYEN | Hours: 5   Minutes: 0  |
+------------------------------------------------------------------------------------------------------------
+                                         [B]ack    [M]ain Menu  
+------------------------------------------------------------------------------------------------------------
+Choose plane: 5
+
+
+
+============================================================================================================
+                                   _   __        _   __   ___     _      
+                                  / | / /____ _ / | / /  /   |   (_)_____ 
+        __|__                    /  |/ // __ `//  |/ /  / /| |  / // ___/                      __|__
+  -o--o--(_)--o--o-             / /|  // /_/ // /|  /  / ___ | / // /                    -o--o--(_)--o--o-                               
+                               /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
+                                         -Planning Manager-                                                            
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+                                          Plan New Voyage:
+ 
+
+
+
+
+ [1] Departing From:                                       Departing From:
+ [2] Arriving In:                                          Arriving In:
+ [3] Date Departure:                                       Date Departure:
+
+                                   [4] Choose Available Plane:
+
+ [5] Time Departing:                                       Time Departing:
+     Date Arrival:                                         Date Arrival:
+     Time Arriving In:                                     Time Arriving In:
+
+                                        
+               
+		
+
+------------------------------------------------------------------------------------------------------------
+                           [B]ack    [M]ain Menu    [S]ave Plan    [D]elete Plan
+------------------------------------------------------------------------------------------------------------
+
 
 
 
