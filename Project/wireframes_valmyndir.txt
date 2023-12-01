@@ -1,4 +1,4 @@
-P1
+TTTTTTTTTAAAAAAAAAAAAAAASSSSSSSSSSSSSSSSSKKKKKKKKKKKKKKKK    1111111111
 
 ============================================================================================================
                                   _   __        _   __   ___     _      
@@ -106,7 +106,15 @@ What do you want to choose:
 
 
 
-____________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+TTTTTTTTTAAAAAAAAAAAAAAASSSSSSSSSSSSSSSSSKKKKKKKKKKKKKKKK 333333333333
 
 
 ============================================================================================================
@@ -148,11 +156,11 @@ What do you want to choose:
         __|__                   /  |/ // __ `//  |/ /  / /| |  / // ___/                 __|__
   -o--o--(_)--o--o-            / /|  // /_/ // /|  /  / ___ | / // /               -o--o--(_)--o--o-                               
                               /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
-                                        -Planning Manager-                                                            
+                                        -Staff Manager-                                                            
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-                                     Logged in As: Planning Manager
+                                     Logged in As: Staff Manager
 
                                         [1] register employee
                                         [2] create shift plan
