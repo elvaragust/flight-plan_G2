@@ -89,7 +89,12 @@
   - [Klára á morgun ] Lokaorð
 ### Vika 1 - Dagur 5
 - Morgunfærsla
-  - [ ]
+  - [x] Inngangur
+  - [ ] Klára wireframes í happy path
+  - [ ] klára class diagram
+  - [ ] Notendapróf
+  - [ ] Greina úr niðurstöðum
+  - [ ] Skila
 - Lokdags
   - [ ]
 
