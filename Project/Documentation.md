@@ -4,7 +4,7 @@
 -----
 
 - #### Mætt
-  - Elvar Ágúst Þorsteinsson
+  - Elvar Ágúst Þorsteinsson (Verkstjóri)
   - Guttormur Freyr Einarsson
   - Margrét Rún Sverrisdóttir
   - Þóra Xue Reynisdóttir
