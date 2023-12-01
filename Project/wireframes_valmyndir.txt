@@ -99,11 +99,191 @@ What do you want to choose:
 
 
 
+TTTTTTTTTAAAAAAAAAAAAAAASSSSSSSSSSSSSSSSSKKKKKKKKKKKKKKKK 2222222222222222222222222
 
 
 
 
+============================================================================================================
+                                  _   __        _   __   ___     _      
+                                 / | / /____ _ / | / /  /   |   (_)_____
+        __|__                   /  |/ // __ `//  |/ /  / /| |  / // ___/                 __|__
+  -o--o--(_)--o--o-            / /|  // /_/ // /|  /  / ___ | / // /               -o--o--(_)--o--o-                               
+                              /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
+                                                                                                       
 
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+                                            SIGN IN AS:
+                                        [1] Planning Manager
+                                        [2] Staff Manager
+                                        [3] Employee
+                             _
+                           -=\`\
+                   |\ ________\_\_____
+                 -=\c`"""""""""""""" "`)
+                    `~~~~~~~~~/ /~~~~~`
+                          -==/ /
+                            '-'
+                                                            _
+                                                           (  )
+                            _ .                         ( `  ) . )
+                          (  _ )_                      (_, _(  ,_)_)
+                        (_  _(_ ,)
+------------------------------------------------------------------------------------------------------------
+                                         [B]ack   [H]ome page 
+------------------------------------------------------------------------------------------------------------
+What do you want to choose: 
+
+
+============================================================================================================
+                                   _   __        _   __   ___     _      
+                                  / | / /____ _ / | / /  /   |   (_)_____ 
+        __|__                    /  |/ // __ `//  |/ /  / /| |  / // ___/                      __|__
+  -o--o--(_)--o--o-             / /|  // /_/ // /|  /  / ___ | / // /                    -o--o--(_)--o--o-                               
+                               /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
+                                         -Planning Manager-                                                            
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+__  _
+\ `/ |
+ \__`!                               Logged in as Planning Manager
+ / ,' `-.__________________
+'-'\_____                LI`-.          [1]Plan New Voyage
+   <____()-=O=O=O=O=O=[]====--)		[2]Change/Delete Voyage
+     `.___ ,-----,_______...-'		[3]Register New Plane
+          /    .'			          [4]Change Info On Plane
+         /   .'			          [5]List Planes
+        /  .'         		          [6]See Saved Voyages
+        `-'
+
+							                                                    _  __
+			   			                                                        | \' /
+					                                                             !`__/ 
+			                                                  __________________.-' ', \ 
+				                                          .-`[]                _____/'-'
+		                                                   (--====][=O=O=O=O=O=-)(____<   
+ 			                                               '-..._______,-----, ___.`     
+	                                                                      '.    \          
+				                                                         '.   \         
+				                                                           '.  \        
+	 				                                                        '-`      
+		
+
+------------------------------------------------------------------------------------------------------------
+                                      [B]ack    [M]ain Menu
+------------------------------------------------------------------------------------------------------------
+
+What do you want to choose: 
+
+
+
+============================================================================================================
+                                   _   __        _   __   ___     _      
+                                  / | / /____ _ / | / /  /   |   (_)_____ 
+        __|__                    /  |/ // __ `//  |/ /  / /| |  / // ___/                      __|__
+  -o--o--(_)--o--o-             / /|  // /_/ // /|  /  / ___ | / // /                    -o--o--(_)--o--o-                               
+                               /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
+                                         -Planning Manager-                                                            
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+                                          Plan New Voyage:
+ 
+
+
+
+
+ [1] Departing From:                                       Departing From:
+ [2] Arriving In:                                          Arriving In:
+ [3] Date Departure:                                       Date Departure:
+
+                                   [4] Choose Available Plane:
+
+ [5] Time Departing:                                       Time Departing:
+     Date Arrival:                                         Date Arrival:
+     Time Arriving In:                                     Time Arriving In:
+
+                                        
+               
+		
+
+------------------------------------------------------------------------------------------------------------
+                           [B]ack    [M]ain Menu    [S]ave Plan    [D]elete Plan
+------------------------------------------------------------------------------------------------------------
+Choose Option: 1
+Departing From: Reykjavik
+
+Choose option: 2
+Arriving In: NUUK
+
+Choose option: 3
+
+============================================================================================================
+                                   _   __        _   __   ___     _      
+                                  / | / /____ _ / | / /  /   |   (_)_____ 
+        __|__                    /  |/ // __ `//  |/ /  / /| |  / // ___/                      __|__
+  -o--o--(_)--o--o-             / /|  // /_/ // /|  /  / ___ | / // /                    -o--o--(_)--o--o-                               
+                               /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
+                                         -Planning Manager-                                                            
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+                                          
+ 
+                                           Select a date:
+
+                                             Day: 
+                                             Month:
+                                             Year:
+ 
+ 
+
+                                  
+		
+
+------------------------------------------------------------------------------------------------------------
+                                   [B]ack    [M]ain Menu    [S]ave date
+------------------------------------------------------------------------------------------------------------
+Input day: 10
+Input month: 03
+Input year: 1940
+S
+
+============================================================================================================
+                                   _   __        _   __   ___     _      
+                                  / | / /____ _ / | / /  /   |   (_)_____ 
+        __|__                    /  |/ // __ `//  |/ /  / /| |  / // ___/                      __|__
+  -o--o--(_)--o--o-             / /|  // /_/ // /|  /  / ___ | / // /                    -o--o--(_)--o--o-                               
+                               /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
+                                         -Planning Manager-                                                            
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+                                          Plan New Voyage:
+ 
+
+
+
+
+ [1] Departing From:                                       Departing From:
+ [2] Arriving In:                                          Arriving In:
+ [3] Date Departure:                                       Date Departure:
+
+                                   [4] Choose Available Plane:
+
+ [5] Time Departing:                                       Time Departing:
+     Date Arrival:                                         Date Arrival:
+     Time Arriving In:                                     Time Arriving In:
+
+                                        
+               
+		
+
+------------------------------------------------------------------------------------------------------------
+                           [B]ack    [M]ain Menu    [S]ave Plan    [D]elete Plan
+------------------------------------------------------------------------------------------------------------
 
 
 
