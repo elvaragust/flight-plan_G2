@@ -1,0 +1,270 @@
+P1
+
+============================================================================================================
+                                  _   __        _   __   ___     _      
+                                 / | / /____ _ / | / /  /   |   (_)_____
+        __|__                   /  |/ // __ `//  |/ /  / /| |  / // ___/                 __|__
+  -o--o--(_)--o--o-            / /|  // /_/ // /|  /  / ___ | / // /               -o--o--(_)--o--o-                               
+                              /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
+                                                                                                       
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+                                            SIGN IN AS:
+                                        [1] Planning Manager
+                                        [2] Staff Manager
+                                        [3] Employee
+                             _
+                           -=\`\
+                   |\ ________\_\_____
+                 -=\c`"""""""""""""" "`)
+                    `~~~~~~~~~/ /~~~~~`
+                          -==/ /
+                            '-'
+                                                            _
+                                                           (  )
+                            _ .                         ( `  ) . )
+                          (  _ )_                      (_, _(  ,_)_)
+                        (_  _(_ ,)
+------------------------------------------------------------------------------------------------------------
+                                         [B]ack   [H]ome page 
+------------------------------------------------------------------------------------------------------------
+What do you want to choose: 
+
+
+
+
+P2
+============================================================================================================
+                                  _   __        _   __   ___     _      
+                                 / | / /____ _ / | / /  /   |   (_)_____
+        __|__                   /  |/ // __ `//  |/ /  / /| |  / // ___/                 __|__
+  -o--o--(_)--o--o-            / /|  // /_/ // /|  /  / ___ | / // /               -o--o--(_)--o--o-                               
+                              /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
+                                           -Employee-                                                            
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+                                
+                                       Logged in as: Employee
+
+                                        [1] See Shift Plan
+                                        [2] Change Personal Information
+                                        [3] Register Leave/Vacation
+                                                 |
+                                             .-"""""-. 
+                                           .'_________'. 
+                                          /_/_|__|__|_\_\
+                                         ;'-._       _.-';
+                    ,--------------------|    `-. .-'    |--------------------,
+                     ``""--..__ NaN ___  ;       '       ;   ___  AIR  __..--""``
+                               `"-// \\.._\             /_..// \\-"`
+                                  \\_//    '._       _.'    \\_//
+                                   `"`        ``---``        `"`
+------------------------------------------------------------------------------------------------------------
+                                         [B]ack   [H]ome page 
+------------------------------------------------------------------------------------------------------------
+What do you want to choose:
+
+
+============================================================================================================
+                            Shift Plan: --Elvar Ágúst Þorsteinsson--
+
+
+
+       Date      Departing from     Departing time    Arriving in     Arriving time   Flight Nr    Gate
+____________________________________________________________________________________________________________
+[1]  | 21/4/23  | Dep: REYKJAVIK    | Time: 17:20 | Arr: NUUK         | Time: 21:40 | FN: NA02 | Gate: A12 |
+     | 22/4/23  | Dep: NUUK         | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA03 | Gate: C02 |
+------------------------------------------------------------------------------------------------------------
+[2]  | 25/4/23  | Dep: REYKJAVIK    | Time: 17:20 | Arr: ÞORSHÖFN     | Time: 21:40 | FN: NA04 | Gate: A09 |
+     | 27/4/23  | Dep: ÞORSHÖFN     | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA05 | Gate: A03 |
+------------------------------------------------------------------------------------------------------------
+[3]  | 30/4/23  | Dep: REYKJAVIK    | Time: 17:20 | Arr: NUUK         | Time: 21:40 | FN: NA06 | Gate: NAN |
+     | 1/5/23   | Dep: NUUK         | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA07 | Gate: NAN |
+------------------------------------------------------------------------------------------------------------
+[4]  | 4/5/23   | Dep: REYKJAVIK    | Time: 17:20 | Arr: KULUSUK      | Time: 21:40 | FN: NA08 | Gate: NAN |
+     | 7/5/23   | Dep: KULUSUK      | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA09 | Gate: NAN |
+------------------------------------------------------------------------------------------------------------
+[5]  | 19/5/23  | Dep: REYKJAVIK    | Time: 17:20 | Arr: TINGWALL     | Time: 21:40 | FN: NA10 | Gate: NAN |
+     | 22/5/23  | Dep: TINGWALL     | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA11 | Gate: NAN |
+------------------------------------------------------------------------------------------------------------
+[6]  | 24/5/23  | Dep: REYKJAVIK    | Time: 17:20 | Arr: LONGYEARBYEN | Time: 21:40 | FN: NA12 | Gate: NAN |
+     | 26/5/23  | Dep: LONGYEARBYEN | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA13 | Gate: NAN |
+------------------------------------------------------------------------------------------------------------
+                                [N]ext page   [B]ack   [H]ome page 
+------------------------------------------------------------------------------------------------------------
+
+What do you want to choose: 
+
+
+
+
+
+
+
+
+
+
+
+____________________________________________________________________________________________________________
+
+
+============================================================================================================
+                                  _   __        _   __   ___     _      
+                                 / | / /____ _ / | / /  /   |   (_)_____
+        __|__                   /  |/ // __ `//  |/ /  / /| |  / // ___/                 __|__
+  -o--o--(_)--o--o-            / /|  // /_/ // /|  /  / ___ | / // /               -o--o--(_)--o--o-                               
+                              /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
+                                                            
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+                                            SIGN IN AS:
+
+                                        [1] Planning manager
+                                        [2] Staff Manager
+                                        [3] Employee
+                             _
+                           -=\`\
+                   |\ ________\_\_____
+                 -=\c`"""""""""""""" "`)
+                    `~~~~~~~~~/ /~~~~~`
+                          -==/ /
+                            '-'
+                                                            _
+                                                           (  )
+                            _ .                         ( `  ) . )
+                          (  _ )_                      (_, _(  ,_)_)
+                        (_  _(_ ,)
+------------------------------------------------------------------------------------------------------------
+                                        [B]ack    [M]ain Menu
+------------------------------------------------------------------------------------------------------------
+What do you want to choose: 
+
+
+
+============================================================================================================
+                                  _   __        _   __   ___     _      
+                                 / | / /____ _ / | / /  /   |   (_)_____
+        __|__                   /  |/ // __ `//  |/ /  / /| |  / // ___/                 __|__
+  -o--o--(_)--o--o-            / /|  // /_/ // /|  /  / ___ | / // /               -o--o--(_)--o--o-                               
+                              /_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/   
+                                        -Planning Manager-                                                            
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+                                     Logged in As: Planning Manager
+
+                                        [1] register employee
+                                        [2] create shift plan
+                                        [3] see shift plan
+                                        [4] edit/delete shift plan
+                                        [5] list all employees
+                                        [6] change employee information
+                                        [7] register/edit flight information
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+                                      [B]ack    [M]ain Menu
+------------------------------------------------------------------------------------------------------------
+
+What do you want to choose: 
+
+
+============================================================================================================
+
+
+                                    --Register staff to voyage--
+
+       Date      Departing from     Departing time    Arriving in      Arriving time   Flight Nr   Staff
+____________________________________________________________________________________________________________
+[1]  | 21/4/23  | Dep: REYKJAVIK    | Time: 17:20 | Arr: NUUK         | Time: 21:40 | FN: NA02 |     5     |
+     | 22/4/23  | Dep: NUUK         | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA03 |     5     |
+------------------------------------------------------------------------------------------------------------
+[2]  | 25/4/23  | Dep: REYKJAVIK    | Time: 17:20 | Arr: ÞORSHÖFN     | Time: 21:40 | FN: NA04 |     5     |
+     | 27/4/23  | Dep: ÞORSHÖFN     | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA05 |     5     |
+------------------------------------------------------------------------------------------------------------
+[3]  | 30/4/23  | Dep: REYKJAVIK    | Time: 17:20 | Arr: NUUK         | Time: 21:40 | FN: NA06 |     12    |
+     | 1/5/23   | Dep: NUUK         | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA07 |     11    |
+------------------------------------------------------------------------------------------------------------
+[4]  | 4/5/23   | Dep: REYKJAVIK    | Time: 17:20 | Arr: KULUSUK      | Time: 21:40 | FN: NA08 |     8     |
+     | 7/5/23   | Dep: KULUSUK      | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA09 |     9     |
+------------------------------------------------------------------------------------------------------------
+[5]  | 19/5/23  | Dep: REYKJAVIK    | Time: 17:20 | Arr: TINGWALL     | Time: 21:40 | FN: NA10 |     3     |
+     | 22/5/23  | Dep: TINGWALL     | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA11 |     7     |
+------------------------------------------------------------------------------------------------------------
+[6]  | 24/5/23  | Dep: REYKJAVIK    | Time: 17:20 | Arr: LONGYEARBYEN | Time: 21:40 | FN: NA12 |     0*    |
+     | 26/5/23  | Dep: LONGYEARBYEN | Time: 15:00 | Arr: REYKJAVIK    | Time: 19:50 | FN: NA13 |     0*    |
+------------------------------------------------------------------------------------------------------------
+                                      [B]ack    [M]ain Menu
+------------------------------------------------------------------------------------------------------------
+
+Choose Trip: 
+
+============================================================================================================
+
+                                  --Flight Information--
+
+Departing From:   REYKJAVIK                                     Departing From:   NUUK
+Date Departure:   21/4/2023                                     Date Departure:   22/4/2023
+Time Departing:   17:20                                         Time Departing:   15:00
+Arriving In:      NUUK                                          Arriving In:      REYKJAVIK
+Date Arrival:     21/4/23                                       Date Arrival:     22/4/23
+Time Arriving In: 21:40                                         Time Arriving In: 19:50
+Flight Number:    NA04                                          Flight Number:    NA05
+
+            --Staff--                                                       --Staff--
+                                
+[1]  * Captain:           Chuck Norris                          [7]  * Captain:           
+[2]  * Pilot:             Gena O'Kelley                         [8]  * Pilot:             Gene'O Kelley
+[3]  * CFA:               Mike Norris                           [9]  * CFA:               Dina Norris
+[4]  * Flight Attendant:  Dakota Alan Norris                    [10] * Flight Attendant:  Eric Norris
+[5]    Flight Attendant:  Danilee Kelly Norris                  [11]   Flight Attendant:  Ray Norris 
+[6] Add Flight Attendand                                        [12]   Add Flight Attendant   
+
+
+------------------------------------------------------------------------------------------------------------
+                             [B]ack    [M]ain Menu   [D]elete Plan
+------------------------------------------------------------------------------------------------------------
+
+What do you want to choose: 
+Who do you want to add: 
+
+============================================================================================================
+
+                                  --Flight Information--
+
+Departing From:   REYKJAVIK                                     Departing From:   NUUK
+Date Departure:   21/4/2023                                     Date Departure:   22/4/2023
+Time Departing:   17:20                                         Time Departing:   15:00
+Arriving In:      NUUK                                          Arriving In:      REYKJAVIK
+Date Arrival:     21/4/23                                       Date Arrival:     22/4/23
+Time Arriving In: 21:40                                         Time Arriving In: 19:50
+Flight Number:    NA04                                          Flight Number:    NA05
+
+
+            --Staff--                                                       --Staff--
+                                
+[1]  * Captain:           Chuck Norris                          [7]  * Captain:           Chuck Norris
+[2]  * Pilot:             Gena O'Kelley                         [8]  * Pilot:             Gene'O Kelley
+[3]  * CFA:               Mike Norris                           [9]  * CFA:               Dina Norris
+[4]  * Flight Attendant:  Dakota Alan Norris                    [10] * Flight Attendant:  Eric Norris
+[5]    Flight Attendant:  Danilee Kelly Norris                  [11]   Flight Attendant:  Ray Norris 
+[6] Add Flight Attendand                                        [12]   Add Flight Attendant     
+
+
+
+------------------------------------------------------------------------------------------------------------
+                             [B]ack   [M]ain Menu   [D]elete Plan
+------------------------------------------------------------------------------------------------------------
+
+What do you want to do: 
+
+
+
+
+
+
+
+
