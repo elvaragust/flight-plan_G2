@@ -1,0 +1,15 @@
+class Employee:
+    def initialize(self, employee_id, name, rank, email, social_sec, phone, license, home_address):
+        self.employee_id = employee_id
+        self.name = name
+        self.rank = rank
+        self.email = email
+        self.social_security = social_sec
+        self.phone = phone
+        self.license = license
+        self.home_address = home_address
+
+
+class Airplane:
+    def initialize(self, name, total_seats, booked_seats, available_seats):
+        self.name = name
