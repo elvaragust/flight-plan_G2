@@ -1,7 +1,7 @@
 #from import
 #from import
 
-class VoyageL:
+class AirplaneL:
     def __init__(self) -> None:
         pass
 
