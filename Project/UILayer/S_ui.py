@@ -1,4 +1,4 @@
-from UILayer.display_ui import Display_UI
+from display_ui import Display_UI
 
 class S_UI:
     

@@ -1,4 +1,4 @@
-from UILayer.display_ui import Display_UI
+from display_ui import Display_UI
 
 class PM_UI:
     
@@ -6,7 +6,9 @@ class PM_UI:
         pass
 
     def menu_output(self):
-        pass
+        print("Planning Manager Menu")
+        print("1. Voyage")
+        print("2. Airplane")
 
     def input_prompt(self):
         while True:
@@ -14,8 +16,12 @@ class PM_UI:
             command = input("Enter your command: ").lower()
             if command == "1":
                 """Plan New Voyage"""
+                menu = Voyage_UI()
+                menu.input_prompt()
             elif command == "2":
                 """Change/Delete Voyage"""
+                menu = Airplane_UI()
+                menu.input_prompt()
             elif command == "3":
                 """Register New Plane"""
             elif command == "4":

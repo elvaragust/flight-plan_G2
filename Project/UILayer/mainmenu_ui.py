@@ -1,16 +1,19 @@
-from UILayer.display_ui import Display_UI
-from UILayer.pm_ui import PM_UI
-from UILayer.sm_ui import SM_UI
-from UILayer.s_ui import S_UI
+from display_ui import Display_UI
+from pm_ui import PM_UI
+from sm_ui import SM_UI
+from s_ui import S_UI
 
-class MainMenu:
+class MainMenu_UI:
     
     def __init__(self):
-        pass
+        print("inside UI")
 
     def menu_output(self):
-        display = Display_UI()
-        display.print_display()
+        print("Main Menu")
+        print("1. Planning Manager")
+        print("2. Staff Manager")
+        print("3. Staff")
+        print("q. quit")
 
     def input_prompt(self):
         while True:

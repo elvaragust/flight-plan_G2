@@ -1,4 +1,4 @@
-from UILayer.display_ui import Display_UI
+from display_ui import Display_UI
 
 class SM_UI:
     
@@ -6,7 +6,9 @@ class SM_UI:
         pass
 
     def menu_output(self):
-        pass
+        print("Staff Manager Menu")
+        print("1. Employees")
+        print("2. Schedule")
 
     def input_prompt(self):
         while True:
@@ -14,19 +16,9 @@ class SM_UI:
             command = input("Enter your command: ")
             command = command.lower()
             if command == "1":
-                """Register Employee"""
+                """Employees"""
             elif command == "2":
-                """Create Shift Plan"""
-            elif command == "3":
-                """See Shift Plan"""
-            elif command == "4":
-                """Edit/Delete Shift Plan"""
-            elif command == "5":
-                """List All Employees"""
-            elif command == "6":
-                """Change Employee Information"""
-            elif command == "7":
-                """Register/Edit Flight Information"""
+                """Schedule"""
             elif command == "b":
                 print("Goin backwards")
                 break
