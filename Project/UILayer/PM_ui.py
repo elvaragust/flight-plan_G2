@@ -16,12 +16,8 @@ class PM_UI:
             command = input("Enter your command: ").lower()
             if command == "1":
                 """Plan New Voyage"""
-                menu = Voyage_UI()
-                menu.input_prompt()
             elif command == "2":
                 """Change/Delete Voyage"""
-                menu = Airplane_UI()
-                menu.input_prompt()
             elif command == "3":
                 """Register New Plane"""
             elif command == "4":
