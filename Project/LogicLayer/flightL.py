@@ -15,6 +15,8 @@ class FlightL():
         self.flight[self.flightNr] = [self.depDate, self.depTime, self.arrDate, self.arrDate, self.airplane, self.destination]
     
     def edit_flight(self):
+        #flight = data_layer.retrieve_schedule(ssn)
+        #return flight
         pass
     
     def assign_staff(self):
