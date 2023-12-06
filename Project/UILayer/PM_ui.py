@@ -1,3 +1,5 @@
+from UILayer.display_ui import Display_UI
+
 class PM_UI:
     
     def __init__(self):
@@ -9,8 +11,7 @@ class PM_UI:
     def input_prompt(self):
         while True:
             self.menu_output()
-            command = input("Enter your command: ")
-            command = command.lower()
+            command = input("Enter your command: ").lower()
             if command == "1":
                 """Plan New Voyage"""
             elif command == "2":

@@ -1,3 +1,5 @@
+from UILayer.display_ui import Display_UI
+
 class SM_UI:
     
     def __init__(self):
