@@ -6,9 +6,18 @@ class PM_UI:
         pass
 
     def menu_output(self):
-        print("Planning Manager Menu")
-        print("1. Voyage")
-        print("2. Airplane")
+        mainmenu = Display_UI()
+        mainmenu.print_header()
+        print("-Planning Manager Menu-".center(140))
+        print()
+        print(" " * 40, "1. Voyage".ljust(100))
+        print(" " * 40, "2. Airplane".ljust(100))
+        print()
+        print()
+        print()
+        mainmenu.print_footer()
+        print("[B]ack".center(140))
+        mainmenu.print_footer()
 
     def input_prompt(self):
         while True:

@@ -9,11 +9,19 @@ class MainMenu_UI:
         print("inside UI")
 
     def menu_output(self):
-        print("Main Menu")
-        print("1. Planning Manager")
-        print("2. Staff Manager")
-        print("3. Staff")
-        print("q. quit")
+        mainmenu = Display_UI()
+        mainmenu.print_header()
+        print("-Main Menu-".center(140))
+        print()
+        print(" " * 40, "1. Planning Manager".ljust(100))
+        print(" " * 40, "2. Staff Manager".ljust(100))
+        print(" " * 40, "3. Staff".ljust(100))
+        print()
+        print()
+        mainmenu.print_footer()
+        print("[Q]uit".center(140))
+        mainmenu.print_footer()
+        
 
     def input_prompt(self):
         while True:
