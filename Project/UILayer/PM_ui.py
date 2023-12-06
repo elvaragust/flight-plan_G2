@@ -10,9 +10,12 @@ class PM_UI:
         mainmenu.print_header()
         print("-Planning Manager Menu-".center(140))
         print()
-        print(" " * 40, "1. Voyage".ljust(100))
-        print(" " * 40, "2. Airplane".ljust(100))
-        print()
+        print(" " * 40, "1. Register New Plane".ljust(100))
+        print(" " * 40, "2. Edit Plane Info".ljust(100))
+        print(" " * 40, "3. List Planes".ljust(100))
+        print(" " * 40, "4. Plan New Voyage".ljust(100))
+        print(" " * 40, "5. Edit Voyage".ljust(100))
+        print(" " * 40, "6. See Saved Voyages".ljust(100))
         print()
         print()
         mainmenu.print_footer()
@@ -24,15 +27,15 @@ class PM_UI:
             self.menu_output()
             command = input("Enter your command: ").lower()
             if command == "1":
-                """Plan New Voyage"""
-            elif command == "2":
-                """Change/Delete Voyage"""
-            elif command == "3":
                 """Register New Plane"""
-            elif command == "4":
-                """Change Info on Plane"""
-            elif command == "5":
+            elif command == "2":
+                """Edit Plane Info"""
+            elif command == "3":
                 """List Planes"""
+            elif command == "4":
+                """Plan New Voyage"""
+            elif command == "5":
+                """Edit Voyage"""
             elif command == "6":
                 """See Saved Voyages"""
             elif command == "b":

@@ -18,6 +18,9 @@ class MainMenu_UI:
         print(" " * 40, "3. Staff".ljust(100))
         print()
         print()
+        print()
+        print()
+        print()
         mainmenu.print_footer()
         print("[Q]uit".center(140))
         mainmenu.print_footer()
@@ -38,6 +41,8 @@ class MainMenu_UI:
                 menu.input_prompt()
             elif command == "3":
                 """Staff"""
+                password = input("Enter your social security number: ")
+                """Check if ssn is valid"""
                 menu = S_UI()
                 menu.input_prompt()
             elif command == "q":
