@@ -1,22 +1,22 @@
 #from import
 #from import
 
-class VoyageL:
-    def __init__(self) -> None:
-        pass
+class PlanningManagerL:
+    def __init__(self, data_wrapper):
+        self.data_wrapper = data_wrapper
 
-    def register_voyage():
-        pass
+    def register_voyage(self, voyage_info):
+        self.data_wrapper.create_voyage(voyage_info)
 
-    def register_flight():
-        pass
+    def register_flight(self, flight_info):
+        self.data_wrapper.create_flight(flight_info)
 
-    def register_airplane():
-        pass
+    def register_airplane(self, airplane_info):
+        self.data_wrapper.create_airplane(airplane_info)
 
-    def get_airplane_list():
-        pass
+    def get_airplane_list(self):
+        return self.data_wrapper.get_airplane_list()
 
-    def get_voyage():
-        pass
+    def get_voyage(self, voyage_id):
+        return self.data_wrapper.get_voyage(voyage_id)
 
