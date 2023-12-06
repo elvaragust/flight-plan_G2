@@ -3,5 +3,18 @@ class Display_UI:
     def __init__(self):
         pass
 
-    def print_display(self):
-        pass
+    def print_header(self):
+        print("=" * 140)
+        print(" " * 51, "_   __        _   __   ___     _", " " * 55)
+        print(" " * 50, "/ | / /____ _ / | / /  /   |   (_)_____", " " * 49)
+        print(" " * 19, "__|__", " " * 23, "/  |/ // __ `//  |/ /  / /| |  / // ___/", " " * 24, "__|__", " " * 19)
+        print(" " * 13, "-o--o--(_)--o--o-", " " * 16, "/ /|  // /_/ // /|  /  / ___ | / // /", " " * 22, "-o--o--(_)--o--o-", " " * 14)
+        print(" " * 47, "/_/ |_/ \__,_//_/ |_/  /_/  |_|/_//_/", " ")
+        print()
+        print("I" * 140)
+        print()
+        print()
+
+    def print_footer(self):
+        print("-" * 140)
+

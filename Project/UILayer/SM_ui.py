@@ -6,9 +6,18 @@ class SM_UI:
         pass
 
     def menu_output(self):
-        print("Staff Manager Menu")
-        print("1. Employees")
-        print("2. Schedule")
+        mainmenu = Display_UI()
+        mainmenu.print_header()
+        print("-Planning Manager Menu-".center(140))
+        print()
+        print(" " * 40, "1. Employees".ljust(100))
+        print(" " * 40, "2. Schedule".ljust(100))
+        print()
+        print()
+        print()
+        mainmenu.print_footer()
+        print("[B]ack".center(140))
+        mainmenu.print_footer()
 
     def input_prompt(self):
         while True:
