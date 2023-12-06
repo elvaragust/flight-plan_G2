@@ -6,7 +6,7 @@ from typing import Union
 
 class Rank(Enum):
     PILOT = "pilot"
-    ASSISTANT_PILOT = "assistant_pilant"
+    ASSISTANT_PILOT = "assistant_pilot"
     HEAD_FLIGHT_ATTENDANT = "head_flight_attendant"
     FLIGHT_ATTENDANT = "flight_attendant"
 
