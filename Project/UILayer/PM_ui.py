@@ -28,36 +28,102 @@ class PM_UI:
             command = input("Enter your command: ").lower()
             if command == "1":
                 """Register New Plane"""
+                choice = PM_UI()
+                choice.register_airplane()
             elif command == "2":
                 """Edit Plane Info"""
+                choice = PM_UI()
+                choice.edit_plane_info()
             elif command == "3":
                 """List Planes"""
+                choice = PM_UI()
+                choice.list_of_airplanes()
             elif command == "4":
                 """Plan New Voyage"""
+                choice = PM_UI()
+                choice.register_voyage()
             elif command == "5":
                 """Edit Voyage"""
+                choice = PM_UI()
+                choice.edit_plane_info()
             elif command == "6":
                 """See Saved Voyages"""
+                choice = PM_UI()
+                choice.list_saved_voyages()
             elif command == "b":
                 print("Goin backwards")
                 break
             else:
                 print("Invalid command!")
 
-    def register_business_trip(self):
-        pass
 
     def register_airplane(self):
-        pass
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
 
-    def save_business_trip(self):
-        pass
-
-    def copy_business_trip(self):
-        pass
+    def edit_plane_info(self):
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
 
     def list_of_airplanes(self):
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
+    
+    def register_voyage(self):
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
+
+    def edit_voyage_info(self):
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
+
+    def save_voyage_info(self):
         pass
+
+    def list_saved_voyages(self):
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
+
+    def copy_voyage_info(self):
+        pass
+
+    
 
 
 

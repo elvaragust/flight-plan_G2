@@ -13,9 +13,9 @@ class SM_UI:
         print(" " * 40, "1. Register New Employee".ljust(100))
         print(" " * 40, "2. Change Employee Info".ljust(100))
         print(" " * 40, "3. List Employees".ljust(100))
-        print(" " * 40, "4. Create Schedule".ljust(100))
-        print(" " * 40, "5. Edit Schedule".ljust(100))
-        print()
+        print(" " * 40, "4. Select Crew On Voyages".ljust(100))
+        print(" " * 40, "5. Edit Crew On Voyages".ljust(100))
+        print(" " * 40, "6. See Schedule".ljust(100))
         print()
         print()
         mainmenu.print_footer()
@@ -29,14 +29,28 @@ class SM_UI:
             command = command.lower()
             if command == "1":
                 """Register New Employee"""
+                choice = SM_UI()
+                choice.register_employee()
             elif command == "2":
                 """Change Employee Info"""
+                choice = SM_UI()
+                choice.change_employee_info()
             elif command == "3":
                 """List Employees"""
+                choice = SM_UI()
+                choice.list_employees()
             elif command == "4":
-                """Create Schedule"""
+                """Select Crew on Voyages"""
+                choice = SM_UI()
+                choice.select_crew_on_voyages()
             elif command == "5":
-                """Edit schedule"""
+                """Edit Crew On Voyages"""
+                choice = SM_UI()
+                choice.edit_crew_on_voyages()
+            elif command == "6":
+                """See Schedule"""
+                choice = SM_UI()
+                choice.see_schedules()
             elif command == "b":
                 print("Goin backwards")
                 break
@@ -44,16 +58,64 @@ class SM_UI:
                 print("Invalid command!")
 
     def register_employee(self):
-        pass
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
     
-    def create_schedules(self):
-        pass
+    def change_employee_info(self):
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
+
+    def list_employees(self):
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
+
+    def select_crew_on_voyages(self):
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
+
+    def edit_crew_on_voyages(self):
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
 
     def see_schedules(self):
-        pass
-
-    def edit_schedules(self):
-        pass
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
 
     def copy_info(self):
         pass
@@ -61,8 +123,6 @@ class SM_UI:
     def delete_schedules(self):
         pass
 
-    def list_employees(self):
-        pass
+    
 
-    def change_employee_info(self):
-        pass
+    

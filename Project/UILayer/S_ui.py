@@ -29,10 +29,16 @@ class S_UI:
             command = command.lower()
             if command == "1":
                 """See Shift Plan"""
+                choice = S_UI()
+                choice.see_schedule()
             elif command == "2":
                 """Change Personal Information"""
+                choice = S_UI()
+                choice.change_basic_info()
             elif command == "3":
                 """Register Leave/Vacation"""
+                choice = S_UI()
+                choice.request_time_off()
             elif command == "b":
                 print("Goin backwards")
                 break
@@ -40,12 +46,34 @@ class S_UI:
                 print("Invalid command!")
 
     def change_basic_info(self):
-        pass
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
+        
 
     def see_schedule(self):
-        pass
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
 
     def request_time_off(self):
-        pass
+        command = ""
+        while command != "b":
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print("[B]ack    [N]ext    [P]rev".center(140))
+            command = input("Enter your command: ")
 
 
