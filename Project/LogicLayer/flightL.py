@@ -1,27 +1,22 @@
 class FlightL():
-    
-    def __init__(self, flightNr, depDate, depTime, arrDate, arrTime, airplane, destination):
-        self.flightNr = flightNr
-        self.depDate = depDate
-        self.depTime = depTime
-        self.arrDate = arrDate
-        self.arrTime = arrTime
-        self.airplane = airplane
-        self.destination = destination
-        self.flight = {}
+    def __init__(self, data_wrapper):
+        self.data_wrapper = data_wrapper
         
-        
-    def create_flight(self):
-        self.flight[self.flightNr] = [self.depDate, self.depTime, self.arrDate, self.arrDate, self.airplane, self.destination]
+    def create_flight(self, flight):
+        self.data_wrapper.create_flight(flight)
     
-    def edit_flight(self):
+    def edit_flight(self, flight_number, update_info):
         #flight = data_layer.retrieve_schedule(ssn)
         #return flight
-        pass
+        existing_flight = self.data_wrapper.get_voyage_info(flight_number)
+        if not existing_flight:
+            return False
+        
+        return self.data_wrapper.update_flight(flight_number, update_info)
     
     def assign_staff(self):
         pass
     
-    def get_flight_info(self):
-        pass
+    def get_flight_info(self, flight_number):
+        return self.data_wrapper.get_flight_info(flight_number)
     
