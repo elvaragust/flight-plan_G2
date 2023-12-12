@@ -11,7 +11,7 @@ class SM_UI:
         os.system("cls")
         mainmenu = Display_UI()
         mainmenu.print_header()
-        print("-Planning Manager Menu-".center(140))
+        print("-Staff Manager Menu-".center(140))
         print()
         print(" " * 40, "1. Register New Employee".ljust(100))
         print(" " * 40, "2. Change Employee Info".ljust(100))
