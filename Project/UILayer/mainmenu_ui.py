@@ -2,6 +2,7 @@ from display_ui import Display_UI
 from pm_ui import PM_UI
 from sm_ui import SM_UI
 from s_ui import S_UI
+import os
 
 class MainMenu_UI:
     
@@ -9,6 +10,7 @@ class MainMenu_UI:
         print("inside UI")
 
     def menu_output(self):
+        os.system("cls")
         mainmenu = Display_UI()
         mainmenu.print_header()
         print("-Main Menu-".center(140))
@@ -16,6 +18,9 @@ class MainMenu_UI:
         print(" " * 40, "1. Planning Manager".ljust(100))
         print(" " * 40, "2. Staff Manager".ljust(100))
         print(" " * 40, "3. Staff".ljust(100))
+        print()
+        print()
+        print()
         print()
         print()
         mainmenu.print_footer()
@@ -38,6 +43,8 @@ class MainMenu_UI:
                 menu.input_prompt()
             elif command == "3":
                 """Staff"""
+                password = input("Enter your social security number: ")
+                """Check if ssn is valid"""
                 menu = S_UI()
                 menu.input_prompt()
             elif command == "q":
