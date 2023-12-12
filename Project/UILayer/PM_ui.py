@@ -1,4 +1,5 @@
 from display_ui import Display_UI
+import os
 
 class PM_UI:
     
@@ -6,6 +7,7 @@ class PM_UI:
         pass
 
     def menu_output(self):
+        os.system("cls")
         mainmenu = Display_UI()
         mainmenu.print_header()
         print("-Planning Manager Menu-".center(140))
@@ -60,51 +62,61 @@ class PM_UI:
     def register_airplane(self):
         command = ""
         while command != "b":
+            os.system("cls")
             menu = Display_UI()
             menu.print_header()
             print()
             menu.print_footer()
             print("[B]ack    [N]ext    [P]rev".center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
 
     def edit_plane_info(self):
         command = ""
         while command != "b":
+            os.system("cls")
             menu = Display_UI()
             menu.print_header()
             print()
             menu.print_footer()
             print("[B]ack    [N]ext    [P]rev".center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
 
     def list_of_airplanes(self):
         command = ""
         while command != "b":
+            os.system("cls")
             menu = Display_UI()
             menu.print_header()
             print()
             menu.print_footer()
             print("[B]ack    [N]ext    [P]rev".center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
     
     def register_voyage(self):
         command = ""
         while command != "b":
+            os.system("cls")
             menu = Display_UI()
             menu.print_header()
             print()
             menu.print_footer()
             print("[B]ack    [N]ext    [P]rev".center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
 
     def edit_voyage_info(self):
         command = ""
         while command != "b":
+            os.system("cls")
             menu = Display_UI()
             menu.print_header()
             print()
             menu.print_footer()
             print("[B]ack    [N]ext    [P]rev".center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
 
     def save_voyage_info(self):
@@ -113,11 +125,13 @@ class PM_UI:
     def list_saved_voyages(self):
         command = ""
         while command != "b":
+            os.system("cls")
             menu = Display_UI()
             menu.print_header()
             print()
             menu.print_footer()
             print("[B]ack    [N]ext    [P]rev".center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
 
     def copy_voyage_info(self):

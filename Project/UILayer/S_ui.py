@@ -1,4 +1,5 @@
 from display_ui import Display_UI
+import os
 
 class S_UI:
     
@@ -6,6 +7,7 @@ class S_UI:
         pass
 
     def menu_output(self):
+        os.system("cls")
         mainmenu = Display_UI()
         mainmenu.print_header()
         print("-Planning Manager Menu-".center(140))
@@ -48,32 +50,38 @@ class S_UI:
     def change_basic_info(self):
         command = ""
         while command != "b":
+            os.system("cls")
             menu = Display_UI()
             menu.print_header()
             print()
             menu.print_footer()
             print("[B]ack    [N]ext    [P]rev".center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
         
 
     def see_schedule(self):
         command = ""
         while command != "b":
+            os.system("cls")
             menu = Display_UI()
             menu.print_header()
             print()
             menu.print_footer()
             print("[B]ack    [N]ext    [P]rev".center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
 
     def request_time_off(self):
         command = ""
         while command != "b":
+            os.system("cls")
             menu = Display_UI()
             menu.print_header()
             print()
             menu.print_footer()
             print("[B]ack    [N]ext    [P]rev".center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
 
 

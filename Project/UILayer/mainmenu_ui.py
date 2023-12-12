@@ -2,6 +2,7 @@ from display_ui import Display_UI
 from pm_ui import PM_UI
 from sm_ui import SM_UI
 from s_ui import S_UI
+import os
 
 class MainMenu_UI:
     
@@ -9,6 +10,7 @@ class MainMenu_UI:
         print("inside UI")
 
     def menu_output(self):
+        os.system("cls")
         mainmenu = Display_UI()
         mainmenu.print_header()
         print("-Main Menu-".center(140))
