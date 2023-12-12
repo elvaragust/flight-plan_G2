@@ -9,7 +9,7 @@ class VoyageL:
         self.data_wrapper.create_voyage(voyage)
 
     def edit_voyage(self, voyage_id, update_info):
-        existing_voyage = self.data_wrapper.get_voyage(voyage_id)
+        existing_voyage = self.data_wrapper.get_voyage_info(voyage_id)
         if not existing_voyage:
             return False
         
