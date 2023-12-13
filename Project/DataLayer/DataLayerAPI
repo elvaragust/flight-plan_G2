@@ -122,7 +122,7 @@ class DataLayer:
 
 
 def main():
-    EMPLOYEE_FILE_NAME = "employees.csv"
+    EMPLOYEE_FILE_NAME = "employee.csv"
     employees: list[Employee] = []
     with open(EMPLOYEE_FILE_NAME, newline='') as csvfile:
         employee_reader = csv.reader(csvfile, )
