@@ -55,7 +55,7 @@ class SM_UI:
                 choice = SM_UI()
                 choice.see_schedules()
             elif command == "b":
-                print("Goin backwards")
+                print("Going backwards")
                 break
             else:
                 print("Invalid command!")

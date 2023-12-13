@@ -43,8 +43,13 @@ class MainMenu_UI:
                 menu.input_prompt()
             elif command == "3":
                 """Staff"""
-                password = input("Enter your social security number: ")
-                """Check if ssn is valid"""
+                while True:
+                    ssn = input("Enter your social security number: ")
+                    if ssn.isdigit() and 9 <= len(ssn) <= 10:
+                        break
+                    else:
+                        print("Invalid input, please enter a number with 9 to 10 digits.")
+                                
                 menu = S_UI()
                 menu.input_prompt()
             elif command == "q":
