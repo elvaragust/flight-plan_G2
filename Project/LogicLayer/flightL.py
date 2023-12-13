@@ -14,8 +14,8 @@ class FlightL():
         
         return self.data_wrapper.update_flight(flight_number, update_info)
     
-    def assign_staff(self):
-        pass
+    def assign_staff(self, flight_number, ssn):
+        return self.data_wrapper.assign_staff_to_flight(flight_number, ssn)
     
     def get_flight_info(self, flight_number):
         return self.data_wrapper.get_flight_info(flight_number)
