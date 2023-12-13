@@ -62,14 +62,36 @@ class SM_UI:
 
     def register_employee(self):
         command = ""
+        name = ""
+        rank = ""
+        email = ""
+        ssn = ""
+        phone = ""
+        landline = ""
+        plane_license = ""
+        home_address = ""
         while command != "b":
             os.system("cls")
             menu = Display_UI()
-            menu.print_staff_register()
-            #menu.print_footer()
-            #print("[B]ack    [N]ext    [P]rev".center(140))
-            #menu.print_footer()
+            menu.print_staff_register(name, rank, email, ssn, phone, landline, plane_license, home_address)
             command = input("Enter your command: ")
+            if command == "1":
+                name = input("Enter the Name: ")
+            elif command == "2":
+                rank = input("Enter the Rank: ")
+            elif command == "3":
+                email = input("Enter the Email: ")
+            elif command == "4":
+                ssn = input("Enter the Social Security Number: ")
+            elif command == "5":
+                phone = input("Enter the phone number: ")
+            elif command == "6":
+                landline = input("Enter the landline number: ")
+            elif command == "7":
+                plane_license = input("Enter the plane license: ")
+            elif command == "8":
+                home_address = input("Enter the home address: ")
+
     
     def change_employee_info(self):
         command = ""
@@ -88,6 +110,7 @@ class SM_UI:
         while command != "b":
             os.system("cls")
             menu = Display_UI()
+            menu.print_list_of_employees()
             menu.print_header()
             print()
             menu.print_footer()
@@ -100,6 +123,7 @@ class SM_UI:
         while command != "b":
             os.system("cls")
             menu = Display_UI()
+            menu.print_select_crew()
             menu.print_header()
             print()
             menu.print_footer()
