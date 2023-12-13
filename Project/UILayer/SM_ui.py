@@ -1,5 +1,6 @@
 from display_ui import Display_UI
 import os
+import constants
 
 class SM_UI:
     
@@ -54,7 +55,7 @@ class SM_UI:
                 choice = SM_UI()
                 choice.see_schedules()
             elif command == "b":
-                print("Goin backwards")
+                print("Going backwards")
                 break
             else:
                 print("Invalid command!")
@@ -100,7 +101,7 @@ class SM_UI:
             menu.print_header()
             print()
             menu.print_footer()
-            print("[B]ack    [N]ext    [P]rev".center(140))
+            print(constants.NAVBAR.center(140))
             menu.print_footer()
             command = input("Enter your command: ")
 
@@ -110,6 +111,11 @@ class SM_UI:
             os.system("cls")
             menu = Display_UI()
             menu.print_list_of_employees()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print(constants.NAVBAR.center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
 
     def select_crew_on_voyages(self):
@@ -118,6 +124,11 @@ class SM_UI:
             os.system("cls")
             menu = Display_UI()
             menu.print_select_crew()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print(constants.NAVBAR.center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
 
     def edit_crew_on_voyages(self):
@@ -128,7 +139,7 @@ class SM_UI:
             menu.print_header()
             print()
             menu.print_footer()
-            print("[B]ack    [N]ext    [P]rev".center(140))
+            print(constants.NAVBAR.center(140))
             menu.print_footer()
             command = input("Enter your command: ")
 
@@ -140,7 +151,7 @@ class SM_UI:
             menu.print_header()
             print()
             menu.print_footer()
-            print("[B]ack    [N]ext    [P]rev".center(140))
+            print(constants.NAVBAR.center(140))
             menu.print_footer()
             command = input("Enter your command: ")
 

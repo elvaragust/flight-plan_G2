@@ -12,7 +12,6 @@ class Rank(Enum):
 
 @dataclass
 class Employee:
-    employee_id: str
     name: str
     rank: Rank
     email: str
@@ -23,7 +22,6 @@ class Employee:
 
     def serialize(self) -> list[Union[str, int]]:
         return [
-            self.employee_id,
             self.name,
             self.rank.value,
             self.email,
@@ -36,7 +34,6 @@ class Employee:
     @classmethod
     def from_row(cls, row_data: list[str]) -> "Employee":
         return Employee(
-            employee_id=row_data[0],
             name=row_data[1],
             rank=Rank(row_data[2]),
             email=row_data[3],
@@ -84,7 +81,7 @@ class Voyage:
             self.destination,
             self.gate,
             self.airplane.name,  
-            [employee.employee_id for employee in self.employees]  
+            [employee.social_security for employee in self.employees]  
         ]
 
 
@@ -96,9 +93,9 @@ class DataLayer:
     def create_employee(self, employee):
         self.employees.append(employee)
 
-    def get_employee_by_id(self, employee_id):
+    def get_employee_by_id(self, social_security):
         for employee in self.employees:
-            if employee.employee_id == employee_id:
+            if employee.social_security == social_security:
                 return employee
         return None
 
@@ -119,7 +116,15 @@ class DataLayer:
             if voyage.flight_number == flight_number:
                 return voyage
         return None
+    
+    def get_employee_list(self):
+        return self.employees
 
+    def get_airplane_list(self):
+        return self.airplanes
+
+    def get_voyage_list(self):
+        return self.voyages
 
 def main():
     EMPLOYEE_FILE_NAME = "employees.csv"
@@ -129,10 +134,10 @@ def main():
         for row in employee_reader:
             employees.append(Employee.from_row(row))
 
-    print(f"Loaded {len(employees)} number of employees from {EMPLOYEE_FILE_NAME}")
+    print(f"{len(employees)} number of employees from {EMPLOYEE_FILE_NAME}")
 
     new_employee = Employee(
-        "1", "Jón", Rank.PILOT, "Jón@nanair.is", "010190009", "5812345", "Boeing Max8", "Dufnaholar 10"
+        "1", "Jón", Rank.PILOT, "Jón@nanair.is", "0101902009", "5812345", "Boeing Max8", "Dufnaholar 10"
     )
 
     employees.append(new_employee)
@@ -157,8 +162,9 @@ def main():
             airplane_name = row[7]  
             airplane = DataLayer.get_airplane_by_name(airplane_name)
             employee_ids = row[8]  
-            employees = [DataLayer.get_employee_by_id(employee_id) for employee_id in employee_ids]
+            employees = [DataLayer().get_employee_by_social_security(int(ssn)) for ssn in employee_ids]
             voyages.append(Voyage(*row[:7], airplane, employees))
+
 
     print(f"Wrote to {EMPLOYEE_FILE_NAME}")
     print(f"Wrote to{AIRPLANE_FILE_NAME}")

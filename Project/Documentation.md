@@ -96,19 +96,27 @@
   - [ ] Greina úr niðurstöðum
   - [ ] Skila
 - Lokdags
-  - [ ]
+  - [x] Klára wireframes í happy path
+  - [x] klára class diagram
+  - [x] Notendapróf
+  - [x] Greina úr niðurstöðum
+  - [x] Skila
 
 -----
 
 ## Vika 2
 ### Vika 2 - Dagur 1
 - Morgunfærsla
-  - [ ]
+  - [ ] Skipta verkefnum niður
 - Lokdags
-  - [ ]
+  - [x] UI - Guttormur
+  - [x] Logic - Elvar og Þóra
+  - [x] Data - Margrét
 ### Vika 2 - Dagur 2
 - Morgunfærsla
-  - [ ]
+  - [í vinnsæu] UI - Guttormur
+  - [í vinnslu] Logic - Elvar og Þóra
+  - [í vinnslu] Data - Margrét
 - Lokdags
   - [ ]
 ### Vika 2 - Dagur 3

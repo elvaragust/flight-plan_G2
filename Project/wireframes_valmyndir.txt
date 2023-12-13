@@ -47,7 +47,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
                                 
                                        Logged in as: Employee
 
-                                        [1] See Shift Plan
+                                        [1] See Shift Schedule
                                         [2] Change Personal Information
                                         [3] Register Leave/Vacation
                                                  |
@@ -67,7 +67,7 @@ What do you want to choose:
 
 
 ============================================================================================================
-                            Shift Plan: --Elvar Ágúst Þorsteinsson--
+                            Shift Schedule: --Elvar Ágúst Þorsteinsson--
 
 
 
@@ -145,7 +145,6 @@ What do you want to choose:
                                          -Planning Manager-                                                            
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
 __  _
 \ `/ |
  \__`!                               Logged in as Planning Manager
@@ -157,7 +156,6 @@ __  _
          /   .'			          [5]List Planes
         /  .'         		          [6]See Saved Voyages
         `-'
-
 							                                                    _  __
 			   			                                                        | \' /
 					                                                             !`__/ 
@@ -169,8 +167,6 @@ __  _
 				                                                         '.   \         
 				                                                           '.  \        
 	 				                                                        '-`      
-		
-
 ------------------------------------------------------------------------------------------------------------
                                       [B]ack    [M]ain Menu
 ------------------------------------------------------------------------------------------------------------
@@ -192,14 +188,11 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
                                           Plan New Voyage:
  
 
-
-
-
  [1] Departing From:                                       Departing From:
  [2] Arriving In:                                          Arriving In:
  [3] Date Departure:                                       Date Departure:
 
-                                   [4] Choose Available Plane:
+ [4] Choose Available Plane:
 
  [5] Time Departing:                                       Time Departing:
      Date Arrival:                                         Date Arrival:
@@ -207,8 +200,6 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
                                         
                
-		
-
 ------------------------------------------------------------------------------------------------------------
                            [B]ack    [M]ain Menu    [S]ave Plan    [D]elete Plan
 ------------------------------------------------------------------------------------------------------------
@@ -249,7 +240,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 Input day: 10
 Input month: 03
 Input year: 1940
-S
+
 
 ============================================================================================================
                                    _   __        _   __   ___     _      
@@ -297,7 +288,7 @@ Choose option: 4
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
                                           Available planes
-                        Total Flight Time From Nuuk And To Reykjavik:  5:30
+                               Total Flight Time for voyage:  5:30
 
        Name         Located        Next Available          Next Flight             Available Time Frame
 ____________________________________________________________________________________________________________
@@ -387,7 +378,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
                                             SIGN IN AS:
 
-                                        [1] Planning manager
+                                        [1] Planning Manager
                                         [2] Staff Manager
                                         [3] Employee
                              _
@@ -421,13 +412,13 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
                                      Logged in As: Staff Manager
 
-                                        [1] register employee
-                                        [2] create shift plan
-                                        [3] see shift plan
-                                        [4] edit/delete shift plan
-                                        [5] list all employees
-                                        [6] change employee information
-                                        [7] register/edit flight information
+                                        [1] Register Employee
+                                        [2] Create Shift Plan
+                                        [3] See Shift Plan
+                                        [4] Edit/Delete Shift Plan
+                                        [5] List All Employees
+                                        [6] Change Employee Information
+                                        [7] Register/Edit flight Staff
 
 
 

@@ -1,5 +1,6 @@
 from display_ui import Display_UI
 import os
+import constants
 
 class PM_UI:
     
@@ -64,6 +65,23 @@ class PM_UI:
             os.system("cls")
             menu = Display_UI()
             menu.print_choose_type_of_plane()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print(constants.NAVBAR.center(140))
+            menu.print_footer()
+            command = input("Enter your command: ")
+
+    def edit_plane_info(self):
+        command = ""
+        while command != "b":
+            os.system("cls")
+            menu = Display_UI()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print(constants.NAVBAR.center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
             if command == "1":
                 """De Havilland Canada DHC-8-200"""
@@ -84,7 +102,7 @@ class PM_UI:
             menu.print_header()
             print()
             menu.print_footer()
-            print("[B]ack    [N]ext    [P]rev".center(140))
+            print(constants.NAVBAR.center(140))
             menu.print_footer()
             command = input("Enter your command: ")
     
@@ -94,6 +112,11 @@ class PM_UI:
             os.system("cls")
             menu = Display_UI()
             menu.print_register_new_voyage()
+            menu.print_header()
+            print()
+            menu.print_footer()
+            print(constants.NAVBAR.center(140))
+            menu.print_footer()
             command = input("Enter your command: ")
 
     def edit_voyage_info(self):
@@ -104,7 +127,7 @@ class PM_UI:
             menu.print_header()
             print()
             menu.print_footer()
-            print("[B]ack    [N]ext    [P]rev".center(140))
+            print(constants.NAVBAR.center(140))
             menu.print_footer()
             command = input("Enter your command: ")
 
@@ -119,7 +142,7 @@ class PM_UI:
             menu.print_header()
             print()
             menu.print_footer()
-            print("[B]ack    [N]ext    [P]rev".center(140))
+            print(constants.NAVBAR.center(140))
             menu.print_footer()
             command = input("Enter your command: ")
 

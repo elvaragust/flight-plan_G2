@@ -1,5 +1,6 @@
 from display_ui import Display_UI
 import os
+import constants
 
 class S_UI:
     
@@ -55,7 +56,7 @@ class S_UI:
             menu.print_header()
             print()
             menu.print_footer()
-            print("[B]ack    [N]ext    [P]rev".center(140))
+            print(constants.NAVBAR.center(140))
             menu.print_footer()
             command = input("Enter your command: ")
         
@@ -68,7 +69,7 @@ class S_UI:
             menu.print_header()
             print()
             menu.print_footer()
-            print("[B]ack    [N]ext    [P]rev".center(140))
+            print(constants.NAVBAR.center(140))
             menu.print_footer()
             command = input("Enter your command: ")
 
@@ -80,7 +81,7 @@ class S_UI:
             menu.print_header()
             print()
             menu.print_footer()
-            print("[B]ack    [N]ext    [P]rev".center(140))
+            print(constants.NAVBAR.center(140))
             menu.print_footer()
             command = input("Enter your command: ")
 
