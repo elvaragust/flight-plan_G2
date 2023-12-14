@@ -1,5 +1,5 @@
-#from uiLayer.mainmenu_ui import MainMenu_UI
-from dataLayer.airplaneD import Airplanes
-print("virkar")
-#mainmenu = MainMenu_UI()
-#mainmenu.input_prompt()
+from uiLayer.mainmenu_ui import MainMenu_UI
+main_menu = MainMenu_UI()
+
+if __name__ == "__main__":
+    main_menu.input_prompt()

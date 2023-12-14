@@ -1,7 +1,7 @@
-from display_ui import Display_UI
-from pm_ui import PM_UI
-from sm_ui import SM_UI
-from s_ui import S_UI
+from uiLayer.display_ui import Display_UI
+from uiLayer.pm_ui import PM_UI
+from uiLayer.sm_ui import SM_UI
+from uiLayer.s_ui import S_UI
 import os
 
 
