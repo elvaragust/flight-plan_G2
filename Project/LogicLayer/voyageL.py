@@ -1,5 +1,5 @@
-#from data. import
-#from import
+from DataLayer import LogicDataWrapper
+
 
 class VoyageL:
     def __init__(self, data_wrapper): #: DataWrapper

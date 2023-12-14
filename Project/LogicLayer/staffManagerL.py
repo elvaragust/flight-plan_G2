@@ -1,5 +1,5 @@
-#from import
-#from import
+from DataLayer import LogicDataWrapper
+
 
 class staffManagerL:
     def __init__(self, data_wrapper):

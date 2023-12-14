@@ -1,4 +1,4 @@
-#from eih import eih
+from DataLayer import LogicDataWrapper
 
 class ValidationL():
     

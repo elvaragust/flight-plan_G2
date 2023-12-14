@@ -6,7 +6,7 @@ class Rank(Enum):
     HEAD_FLIGHT_ATTENDANT = "head_flight_attendant"
     FLIGHT_ATTENDANT = "flight_attendant"
 
-class Employee:
+class Employees:
     def __init__(self, social_security: str, name: str, rank: Rank, email: str, phone: str, landline: str, license: str, address: str):
         self.social_security = social_security
         self.name = name

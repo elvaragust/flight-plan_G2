@@ -1,5 +1,6 @@
 import csv
-from employee import Employee
+from employeeM import Employees
+
 
 class EmployeeData:
     employees = {}
@@ -7,15 +8,14 @@ class EmployeeData:
 
     def __init__(self):
         self.load_data_from_file()
-
+        
     def load_data_from_file(self):
         with open(self.FILE_NAME, newline='') as csvfile:
             reader = csv.reader(csvfile)
-            next(reader)  # Skps the header row
+            next(reader)  # Skips the header row
             for row in reader:
-                social_security = row[0]
-                employee_info = row[1:]
-                employee = Employee.from_row(social_security, employee_info)
+                social_security, *employee_info = row
+                employee = Employees(social_security, *employee_info)
                 self.employees[social_security] = employee
 
     def save_data_to_file(self):
@@ -24,7 +24,7 @@ class EmployeeData:
             for employee in self.employees.values():
                 writer.writerow(employee.serialize())
 
-    def create_employee(self, employee: Employee):
+    def create_employee(self, employee: Employees):
         self.employees[employee.social_security] = employee
         self.save_data_to_file()
 

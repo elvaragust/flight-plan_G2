@@ -1,5 +1,5 @@
 import csv
-from airplane import Airplane
+from airplaneM import Airplanes
 
 class AirplaneData:
     airplanes = {}
@@ -8,15 +8,14 @@ class AirplaneData:
     def __init__(self):
         self.load_data_from_file()
 
-    def load_datas_from_file(self):
+    def load_data_from_file(self):
         with open(self.FILE_NAME, newline='') as csvfile:
             reader = csv.reader(csvfile)
-            next(reader)  # Skps the header row
+            next(reader)  # Skips the header row
             for row in reader:
-                airplane_name = row[0]
-                airplane_info = row[1:]
-                airplane = Airplane.from_row(airplane_name, airplane_info)
-                self.airplanes[airplane_name] = airplane
+                name, model, manufacturer, seats = row
+                airplane = Airplanes(name, model, manufacturer, int(seats))
+                self.airplanes[airplane.name] = airplane
 
     def save_data_to_file(self):
         with open(self.FILE_NAME, 'a', newline='') as csvfile:
@@ -24,7 +23,7 @@ class AirplaneData:
             for airplane in self.airplanes.values():
                 writer.writerow(airplane.serialize())
 
-    def create_airplane(self, airplane: Airplane):
+    def create_airplane(self, airplane: Airplanes):
         self.airplanes[airplane.name] = airplane
         self.save_data_to_file()
 

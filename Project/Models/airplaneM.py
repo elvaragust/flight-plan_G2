@@ -1,4 +1,5 @@
-class Airplane:
+
+class Airplanes:
     def __init__(self, name: str, model: str, manufacturer: str, seats: int):
         self.name = name
         self.model = model
