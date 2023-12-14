@@ -1,5 +1,5 @@
 import csv
-from airplaneM import Airplanes
+from models.airplaneM import Airplanes
 
 class AirplaneData:
     airplanes = {}

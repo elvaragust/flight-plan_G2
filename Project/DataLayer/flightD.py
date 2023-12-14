@@ -1,5 +1,5 @@
 import csv
-from flight import Flight
+from models.flightM import Flight
 
 class FlightData:
     flights = {}

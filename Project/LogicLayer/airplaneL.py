@@ -1,4 +1,4 @@
-from DataLayer import LogicDataWrapper
+from dataLayer.logic_data_wrapper import LogicDataWrapper
 
 class AirplaneL:
     def __init__(self, data_wrapper):

@@ -1,5 +1,6 @@
 import csv
-from employeeM import Employees
+from models.employeeM import Employees
+
 
 
 class EmployeeData:

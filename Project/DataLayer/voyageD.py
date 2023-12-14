@@ -1,5 +1,5 @@
 import csv
-from voyage import Voyage
+from models.voyageM import Voyage
 
 class VoyageData:
     voyages = {}
