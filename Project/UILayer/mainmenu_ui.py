@@ -15,9 +15,9 @@ class MainMenu_UI:
         mainmenu.print_header()
         print("-Main Menu-".center(140))
         print()
-        print(" " * 40, "1. Planning Manager".ljust(100))
-        print(" " * 40, "2. Staff Manager".ljust(100))
-        print(" " * 40, "3. Staff".ljust(100))
+        print(" " * 40, "[1] Planning Manager".ljust(100))
+        print(" " * 40, "[2] Staff Manager".ljust(100))
+        print(" " * 40, "[3] Staff".ljust(100))
         print()
         print()
         print()
@@ -43,15 +43,14 @@ class MainMenu_UI:
                 menu.input_prompt()
             elif command == "3":
                 """Staff"""
-                while True:
+                ssn = ""
+                while ssn.lower() != "b":
                     ssn = input("Enter your social security number: ")
                     if ssn.isdigit() and 9 <= len(ssn) <= 10:
-                        break
+                        menu = S_UI()
+                        ssn = menu.input_prompt()
                     else:
                         print("Invalid input, please enter a number with 9 to 10 digits.")
-                                
-                menu = S_UI()
-                menu.input_prompt()
             elif command == "q":
                 print("See you later!")
                 break
