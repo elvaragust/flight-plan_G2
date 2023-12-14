@@ -1,6 +1,14 @@
-class AirplaneModel:
-    def __init__(self, name, total_seats, booked_seats, available_seats):
+class Airplane:
+    def __init__(self, name: str, model: str, manufacturer: str, seats: int):
         self.name = name
-        self.total_seats = total_seats
-        self.booked_seats = booked_seats
-        self.available_seats = available_seats
+        self.model = model
+        self.manufacturer = manufacturer
+        self.seats = seats
+
+    def serialize(self) -> dict:
+        return {
+            'name': self.name,
+            'model': self.model,
+            'manufacturer': self.manufacturer,
+            'seats': self.seats
+        }
