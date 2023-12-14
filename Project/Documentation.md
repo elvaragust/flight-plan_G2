@@ -187,10 +187,16 @@
   - [Í vinnslu] UI Logic wrapper - Þóra
   - [Í vinnslu ] Update-a Hönnunarskýrsluna - Margrét
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] Tengingar - Elvar
+  - [Í vinnslu] UI Logic wrapper - Þóra
+  - [Í vinnslu ] Update-a Hönnunarskýrsluna - Margrét
 ### Vika 3 - Dagur 4
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] Tengingar - Elvar
+  - [Í vinnslu] UI Logic wrapper - Þóra
+  - [Í vinnslu ] Update-a Hönnunarskýrsluna - Margrét
 - Lokdags
   - [ ]
 ### Vika 3 - Dagur 5
