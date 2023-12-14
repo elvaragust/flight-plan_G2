@@ -118,46 +118,85 @@
   - [í vinnslu] Logic - Elvar og Þóra
   - [í vinnslu] Data - Margrét
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Logic - Elvar og Þóra
+  - [í vinnslu] Data - Margrét
 ### Vika 2 - Dagur 3
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Logic - Elvar og Þóra
+  - [í vinnslu] Data - Margrét
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Logic - Elvar og Þóra
+  - [í vinnslu] Data - Margrét
 ### Vika 2 - Dagur 4
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Logic - Elvar og Þóra
+  - [í vinnslu] Data - Margrét
+  - [Í vinnslu] Logic/Data wrapper - Margrét
+  - [Í vinnslu] Module classinn - Þóra
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Logic - Elvar og Þóra
+  - [í vinnslu] Data - Margrét
+  - [Í vinnslu] Logic/Data wrapper - Margrét
+  - [Í vinnslu] Module classinn - Þóra
 ### Vika 2 - Dagur 5
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [x] Logic - Elvar og Þóra
+  - [x] Data - Margrét
+  - [Í vinnslu] Logic/Data wrapper - Margrét
+  - [Í vinnslu] Module classinn - Þóra
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [x] Logic - Elvar og Þóra
+  - [x] Data - Margrét
+  - [Í vinnslu] Logic/Data wrapper - Margrét
+  - [Í vinnslu] Module classinn - Þóra
 
 -----
 
 ## Vika 3
 ### Vika 3 - Dagur 1
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [x] Logic/Data wrapper - Margrét
+  - [x] Module classinn - Þóra
+  - [ ] UI/Logic wrapper - Þóra
+  - [ ] Tengingar - Allir
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] UI/Logic wrapper - Þóra
+  - [Í vinnslu] Tengingar - Allir
 ### Vika 3 - Dagur 2
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] UI/Logic wrapper - Þóra
+  - [Í vinnslu] Tengingar - Allir
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] UI/Logic wrapper - Þóra
+  - [Í vinnslu] Tengingar - Allir
 ### Vika 3 - Dagur 3
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] UI/Logic wrapper - Þóra
+  - [Í vinnslu] Tengingar - Allir
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] UI/Logic wrapper - Þóra
+  - [Í vinnslu] Tengingar - Allir
 ### Vika 3 - Dagur 4
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] UI/Logic wrapper - Þóra
+  - [Í vinnslu] Tengingar - Allir
+  - [ ] Update-a skýrsluna - Margrét
 - Lokdags
-  - [ ]
+  - 
 ### Vika 3 - Dagur 5
 - Morgunfærsla
   - [ ]
