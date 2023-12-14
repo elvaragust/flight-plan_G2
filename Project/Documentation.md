@@ -108,53 +108,95 @@
 ### Vika 2 - Dagur 1
 - Morgunfærsla
   - [ ] Skipta verkefnum niður
-  - [ ] UI - Guttormur
-  - [ ] Logic - Elvar og Þóra
-  - [ ] Data - Margrét
 - Lokdags
-  - [ ]
+  - [x] UI - Guttormur
+  - [x] Logic - Elvar og Þóra
+  - [x] Data - Margrét
 ### Vika 2 - Dagur 2
 - Morgunfærsla
-  - [ ]
+  - [í vinnsæu] UI - Guttormur
+  - [í vinnslu] Logic - Elvar og Þóra
+  - [í vinnslu] Data - Margrét
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Logic - Elvar og Þóra
+  - [í vinnslu] Data - Margrét
 ### Vika 2 - Dagur 3
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Logic - Elvar og Þóra
+  - [í vinnslu] Data - Margrét
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Logic - Elvar og Þóra
+  - [Í vinnslu] Data - Margrét
+  - [ ] Module classinn - Þóra
+  - [ ] Logic/Data Wrapper - Margrét
 ### Vika 2 - Dagur 4
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [x] Logic - Elvar og Þóra
+  - [x] Data - Margrét
+  - [í vinnslu] Module classinn - Þóra
+  - [í vinnslu] Logic/Data Wrapper - Margrét
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Module classinn - Þóra
+  - [í vinnslu] Logic/Data Wrapper - Margrét
 ### Vika 2 - Dagur 5
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Module classinn - Þóra
+  - [í vinnslu] Logic/Data Wrapper - Margrét
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Module classinn - Þóra
+  - [í vinnslu] Logic/Data Wrapper - Margrét
 
 -----
 
 ## Vika 3
 ### Vika 3 - Dagur 1
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Module classinn - Þóra
+  - [í vinnslu] Logic/Data Wrapper - Margrét
+  - [ ] Tengingar - Elvar
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [í vinnslu] Module classinn - Þóra
+  - [í vinnslu] Logic/Data Wrapper - Margrét
+  - [Í vinnslu ] Tengingar - Elvar
 ### Vika 3 - Dagur 2
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [X] Module classinn - Þóra
+  - [X] Logic/Data Wrapper - Margrét
+  - [Í vinnslu] Tengingar - Elvar
+  - [ ] UI Logic wrapper - Þóra
+  - [ ] Update-a Hönnunarskýrsluna - Margrét
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] Tengingar - Elvar
+  - [Í vinnslu] UI Logic wrapper - Þóra
+  - [Í vinnslu ] Update-a Hönnunarskýrsluna - Margrét
 ### Vika 3 - Dagur 3
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] Tengingar - Elvar
+  - [Í vinnslu] UI Logic wrapper - Þóra
+  - [Í vinnslu ] Update-a Hönnunarskýrsluna - Margrét
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] Tengingar - Elvar
+  - [Í vinnslu] UI Logic wrapper - Þóra
+  - [Í vinnslu ] Update-a Hönnunarskýrsluna - Margrét
 ### Vika 3 - Dagur 4
 - Morgunfærsla
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] Tengingar - Elvar
+  - [Í vinnslu] UI Logic wrapper - Þóra
+  - [Í vinnslu ] Update-a Hönnunarskýrsluna - Margrét
 - Lokdags
   - [ ]
 ### Vika 3 - Dagur 5
