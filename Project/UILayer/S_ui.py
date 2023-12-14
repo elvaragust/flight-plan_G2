@@ -13,16 +13,16 @@ class S_UI:
         mainmenu.print_header()
         print("-Staff Menu-".center(140))
         print()
-        print(" " * 40, "1. See Shift Plan".ljust(100))
-        print(" " * 40, "2. Change Personal Information".ljust(100))
-        print(" " * 40, "3. Register Leave/Vacation".ljust(100))
+        print(" " * 40, "[1] See Shift Plan".ljust(100))
+        print(" " * 40, "[2] Change Personal Information".ljust(100))
+        print(" " * 40, "[3] Register Leave/Vacation".ljust(100))
         print()
         print()
         print()
         print()
         print()
         mainmenu.print_footer()
-        print("[B]ack".center(140))
+        print(constants.NAVBAR.center(140))
         mainmenu.print_footer()
 
     def input_prompt(self):
@@ -44,7 +44,7 @@ class S_UI:
                 choice.request_time_off()
             elif command == "b":
                 print("Goin backwards")
-                break
+                return "b"
             else:
                 print("Invalid command!")
 
@@ -53,12 +53,32 @@ class S_UI:
         while command != "b":
             os.system("cls")
             menu = Display_UI()
-            menu.print_header()
-            print()
-            menu.print_footer()
-            print(constants.NAVBAR.center(140))
-            menu.print_footer()
+            menu.print_edit_staff_information_staff()
             command = input("Enter your command: ")
+            if command == "1":
+                pot_email = input("Enter your Email: ")
+                if pot_email.lower() == "b":
+                    pass
+                else:
+                    email = pot_email
+            elif command == "2":
+                pot_phone = input("Enter your phone number: ")
+                if pot_phone.lower() == "b":
+                    pass
+                else:
+                    phone = pot_phone
+            elif command == "3":
+                pot_landline = input("Enter your landline number: ")
+                if pot_landline.lower() == "b":
+                    pass
+                else:
+                    landline = pot_landline
+            elif command == "4":
+                pot_home_address = input("Enter your home address: ")
+                if pot_home_address.lower() == "b":
+                    pass
+                else:
+                    home_address = pot_home_address
         
 
     def see_schedule(self):
