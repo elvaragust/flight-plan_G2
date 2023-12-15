@@ -39,6 +39,4 @@ class EmployeeData:
         return self.employees.get(social_security, None)
 
     def get_employee_list(self):
-    
-    def see_schedule_specific(self, ssn):
-        pass       
+        return list(self.employees.values())
