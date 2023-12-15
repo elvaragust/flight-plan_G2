@@ -1,9 +1,9 @@
 import csv
-from Models.voyageM import Voyage
+from models.voyageM import Voyage
 
 class VoyageData:
     voyages = {}
-    FILE_NAME = "voyage.csv"
+    FILE_NAME = "dataLayer\\voyage.csv"
 
     def __init__(self):
         self.load_data_from_file()

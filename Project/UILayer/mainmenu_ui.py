@@ -48,7 +48,8 @@ class MainMenu_UI:
                 ssn = ""
                 while ssn.lower() != "b":
                     ssn = input("Enter your social security number: ")
-                    if ssn.isdigit() and 9 <= len(ssn) <= 10:
+                    employee_info = self.data_layer.logic_data_wrapper.get_employee_info(ssn)
+                    if employee_info:
                         menu = S_UI()
                         ssn = menu.input_prompt()
                     else:

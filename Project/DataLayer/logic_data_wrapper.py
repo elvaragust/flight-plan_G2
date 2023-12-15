@@ -1,7 +1,7 @@
-from DataLayer.employeeD import EmployeeData
-from DataLayer.airplaneD import AirplaneData
-from DataLayer.flightD import FlightData
-from DataLayer.voyageD import VoyageData
+from dataLayer.employeeD import EmployeeData
+from dataLayer.airplaneD import AirplaneData
+from dataLayer.flightD import FlightData
+from dataLayer.voyageD import VoyageData
 
 class LogicDataWrapper:
     def __init__(self):
@@ -29,6 +29,9 @@ class LogicDataWrapper:
 
     def get_schedule_info(self, ssn):
         return self.employee_data.get_schedule_info(ssn)
+    
+    def get_all_employees(self):
+        return self.employee_data.get_all_employees()
 
     # flightL --------------------------------------------------------------
     def create_flight(self, flight_info):
@@ -42,9 +45,9 @@ class LogicDataWrapper:
 
     def get_flight_info(self, flight_number):
         return self.flight_data.get_flight_by_number(flight_number)
-    
-    def get_employees_not_working(self, day):
-        self.flight_data.get_employees_not_working(day)
+
+    def get_all_flights(self):
+        return self.flight_data.get_all_flights()
 
     # planningManagerL -----------------------------------------------------
     def get_airplane_list(self):

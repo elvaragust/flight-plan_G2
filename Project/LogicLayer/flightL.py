@@ -1,5 +1,5 @@
-from DataLayer.logic_data_wrapper import LogicDataWrapper
-
+from dataLayer.logic_data_wrapper import LogicDataWrapper
+from datetime import datetime
 
 class FlightL():
     def __init__(self, data_wrapper=None):
@@ -27,5 +27,21 @@ class FlightL():
         return self.data_wrapper.get_flight_info(flight_number)
         
     def get_employees_not_working(self, day):
-        self.data_wrapper.get_employees_not_working(day)
-    
+        day = datetime.strptime(day, '%d/%m/%Y')
+        flights = self.data_wrapper.get_all_flights()
+        employees = self.data_wrapper.get_all_employees()
+
+        working_employees = set()
+        for flight in flights:
+            if 'DepartureDate' in flight:
+                flight_day = datetime.strptime(flight['DepartureDate'], '%d/%m/%Y')
+                if flight_day.date() == day.date():
+                    working_employees.add(flight['CaptainSSN'])
+                    working_employees.add(flight['PilotSSN'])
+                    working_employees.add(flight['Flight_service_managerSSN'])
+                    working_employees.add(flight['Flight_AttendantSSN'])
+
+        employees_not_working = [employee for employee in employees if employee['SSN'] not in working_employees]
+        for employee in employees_not_working:
+            return f"Name: {employee['Name']}, SSN: {employee['SSN']}, Rank: {employee['Rank']}"
+        

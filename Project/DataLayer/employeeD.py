@@ -1,11 +1,11 @@
 import csv
-from Models.employeeM import Employees
+from models.employeeM import Employees
 
 
 
 class EmployeeData:
     employees = {}
-    FILE_NAME = "employee.csv"
+    FILE_NAME = "dataLayer\\employee.csv"
 
     def __init__(self):
         self.load_data_from_file()
@@ -19,6 +19,9 @@ class EmployeeData:
                 employee = Employees(social_security, *employee_info)
                 self.employees[social_security] = employee
 
+    def get_all_employees():
+       return list(self.employees.values())
+            
     def save_data_to_file(self):
         with open(self.FILE_NAME, 'a', newline='') as csvfile:
             writer = csv.writer(csvfile)
