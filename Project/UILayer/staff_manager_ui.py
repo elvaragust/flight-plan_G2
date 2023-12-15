@@ -2,11 +2,13 @@ from uiLayer.display_ui import Display_UI
 import os
 from uiLayer import constants
 from uiLayer.validation_ui import ValidationL
+from logicLayer.logic_ui_wrapper import Logic_Wrapper
 
 class SM_UI:
     
     def __init__(self):
         self.validation = ValidationL()
+        self.logic_wrapper = Logic_Wrapper()
 
     def menu_output(self):
         os.system("cls")
@@ -19,7 +21,7 @@ class SM_UI:
         print(" ".ljust(55), "[3] List Employees".ljust(85))
         print(" ".ljust(55), "[4] Find Employee".ljust(85))
         print(" ".ljust(55), "[5] Select Crew On Voyages".ljust(85))
-        print(" ".ljust(55), "[6] See Schedule".ljust(85))
+        print(" ".ljust(55), "[6] See Schedule by SSN".ljust(85))
         print()
         print()
         print()
@@ -64,7 +66,7 @@ class SM_UI:
                 #if ssn in employee_dict:
                  #   pass
                 choice = SM_UI()
-                menu_command = choice.find_employee()
+                menu_command = choice.find_employee(ssn)
 
             elif command == "5":
                 """Select Crew on Voyages"""
@@ -99,7 +101,7 @@ class SM_UI:
         plane_license = ""
         home_address = ""
         
-        value_list = ["","","","","","",""]
+        value_list = ["","","",""," ","",""]
         employee_create_dict = {}
         
         while command.lower() != "b" and command.lower() != "back":
@@ -118,7 +120,7 @@ class SM_UI:
                         try:
                             self.validation.validate_employee_name(pot_name)
                             name = pot_name.capitalize()
-                            value_list[0] = pot_name.capitalize()
+                            value_list[1] = pot_name.capitalize()
                             break
                         except ValueError:
                             print("Invalid Name")
@@ -134,11 +136,11 @@ class SM_UI:
                     command2 = input("Enter your command: ")
                     if command2 == "1":
                         rank = "Pilot"
-                        value_list[1] = rank
+                        value_list[2] = rank
                         command2 = "b"
                     elif command2 == "2":
                         rank = "Flight Attendant"
-                        value_list[1] = rank
+                        value_list[2] = rank
                         command2 = "b"
                     elif command2.lower() == "h" or command2.lower() == "home":
                         return "b"
@@ -155,7 +157,7 @@ class SM_UI:
                         try:
                             self.validation.validate_email(pot_email)
                             email = pot_email
-                            value_list[2] = pot_email
+                            value_list[3] = pot_email
                             break
                         except ValueError:
                             print("Invalid Email")
@@ -184,6 +186,7 @@ class SM_UI:
                         try:
                             self.validation.validate_employee_ssn(pot_ssn)
                             ssn = pot_ssn
+                            value_list[0] = pot_ssn
                             break
                         except ValueError:
                             print("Invalid Social Security Number")
@@ -308,6 +311,7 @@ class SM_UI:
                 #else:
                  #   home_address = pot_home_address.capitalize()
             elif command.lower() == "s" or command.lower() == "save":
+                self.logic_wrapper.create_employee(value_list)
                 command = "b"
             elif command.lower() == "h" or command.lower() == "home":
                 return "b"
@@ -467,12 +471,12 @@ class SM_UI:
             elif command.lower() == "h" or command.lower() == "home":
                 return "b"
             
-    def find_employee(self):
+    def find_employee(self, ssn):
         command = ""
         while command.lower() != "b" and command.lower() != "back":
             os.system("cls")
             menu = Display_UI()
-            menu.print_find_employee()
+            menu.print_find_employee(ssn)
             command = input("Enter your command: ")
             if command.lower() == "h" or command.lower() == "home":
                 return "b"
@@ -565,7 +569,8 @@ class SM_UI:
         while command.lower() != "b" and command.lower() != "back":
             os.system("cls")
             menu = Display_UI()
-            menu.print_see_schedule()
+            ssn = input("Enter a ssn: ")
+            menu.print_see_schedule(ssn)
             command = input("Enter your command: ")
 
     def copy_info(self):

@@ -13,7 +13,7 @@ class Logic_Wrapper:
 """
     #Employees
     def create_employee(self, employee):
-        return self.employee_logic.create_employee(employee)
+        return self.employee_logic.create_employees(employee)
 
     def get_all_employees(self):
         return self.employee_logic.get_all_employees()

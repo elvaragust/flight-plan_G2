@@ -31,9 +31,16 @@ class EmployeeData:
             for employee in self.employees.values():
                 writer.writerow(employee.serialize())
 
-    def create_employee(self, employee: Employees):
+    """def create_employee(self, employee: Employees):
         self.employees[employee.social_security] = employee
-        self.save_data_to_file()
+        self.save_data_to_file()"""
+    
+    def create_employee(self, employee):
+        with open(self.FILE_NAME, 'a') as f:
+            write = csv.writer(f)
+        
+            write.writerow(employee)
+            self.save_data_to_file()
 
     def get_employee_by_id(self, ssn):
         with open(self.FILE_NAME, 'r', encoding='utf-8') as csvfile:
@@ -41,7 +48,7 @@ class EmployeeData:
             for row in reader:
                 if row['SSN'] == ssn:
                     return row
-        return None
+        #return None
 
     def get_employee_list(self):
         return list(self.employees.values())
