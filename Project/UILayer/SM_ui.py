@@ -120,7 +120,7 @@ class SM_UI:
                         value_list[0] = pot_name
            
           
-          elif command == "2":
+            elif command == "2":
                 command2 = ""
                 while command2.lower() != "b" and command2.lower() != "back":
                     os.system("cls")

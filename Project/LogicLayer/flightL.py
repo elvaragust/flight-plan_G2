@@ -42,6 +42,4 @@ class FlightL():
                     working_employees.add(flight['Flight_AttendantSSN'])
 
         employees_not_working = [employee for employee in employees if employee['SSN'] not in working_employees]
-        for employee in employees_not_working:
-            return f"Name: {employee['Name']}, SSN: {employee['SSN']}, Rank: {employee['Rank']}"
-        
+        return employees_not_working

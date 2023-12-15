@@ -32,7 +32,7 @@ class S_UI:
         print(constants.NAVBAR.center(140))
         mainmenu.print_footer()
 
-    def input_prompt(self):
+    def input_prompt(self, ssn):
         menu_command = ""
         command = ""
         while command.lower() != "b" and command.lower() != "back":

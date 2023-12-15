@@ -19,8 +19,14 @@ class FlightData:
                 flight = Flight.from_row(flight_id, flight_info)
                 self.flights[flight_id] = flight
 
-    def get_all_flights():
-        return list(self.flights.values())
+    def get_all_flights(self):
+        flight = []
+        with open(self.FILE_NAME, 'r', encoding='utf-8') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                flight.append(row)
+        return flight
+
     
     def save_data_to_file(self):
         with open(self.FILE_NAME, 'a', newline='', encoding='utf-8') as csvfile:
