@@ -1,8 +1,8 @@
 import csv
-from models.airplaneM import Airplanes
+from Models.airplaneM import Airplanes
 class AirplaneData:
     airplanes = {}
-    FILE_NAME = "airplanes.csv"
+    FILE_NAME = "Project\\DataLayer\\airplane.csv"
     def __init__(self):
         self.load_data_from_file()
 

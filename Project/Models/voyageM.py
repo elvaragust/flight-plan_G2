@@ -12,3 +12,7 @@ class Voyage:
             'first_flight_date': self.first_flight_date,
             'last_flight_date': self.last_flight_date
         }
+    
+    @classmethod
+    def from_row(cls, voyage_id, voyage_info):
+        return cls(voyage_id, *voyage_info)

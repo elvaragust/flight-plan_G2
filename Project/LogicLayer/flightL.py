@@ -1,9 +1,12 @@
-from dataLayer.logic_data_wrapper import LogicDataWrapper
+from DataLayer.logic_data_wrapper import LogicDataWrapper
 
 
 class FlightL():
-    def __init__(self, data_wrapper):
-        self.data_wrapper = LogicDataWrapper()
+    def __init__(self, data_wrapper=None):
+        if data_wrapper is None:
+            self.data_wrapper = LogicDataWrapper()
+        else:
+            self.data_wrapper = data_wrapper
         
     def create_flight(self, flight):
         self.data_wrapper.create_flight(flight)
@@ -22,4 +25,7 @@ class FlightL():
     
     def get_flight_info(self, flight_number):
         return self.data_wrapper.get_flight_info(flight_number)
+        
+    def get_employees_not_working(self, day):
+        self.data_wrapper.get_employees_not_working(day)
     

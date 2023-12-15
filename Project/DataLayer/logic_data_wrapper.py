@@ -1,7 +1,7 @@
-from employeeD import EmployeeData
-from airplaneD import AirplaneData
-from flightD import FlightData
-from voyageD import VoyageData
+from DataLayer.employeeD import EmployeeData
+from DataLayer.airplaneD import AirplaneData
+from DataLayer.flightD import FlightData
+from DataLayer.voyageD import VoyageData
 
 class LogicDataWrapper:
     def __init__(self):
@@ -42,6 +42,9 @@ class LogicDataWrapper:
 
     def get_flight_info(self, flight_number):
         return self.flight_data.get_flight_by_number(flight_number)
+    
+    def get_employees_not_working(self, day):
+        self.flight_data.get_employees_not_working(day)
 
     # planningManagerL -----------------------------------------------------
     def get_airplane_list(self):
