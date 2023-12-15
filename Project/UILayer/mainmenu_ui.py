@@ -15,9 +15,9 @@ class MainMenu_UI:
         mainmenu.print_header()
         print("-Main Menu-".center(140))
         print()
-        print(" " * 40, "[1] Planning Manager".ljust(100))
-        print(" " * 40, "[2] Staff Manager".ljust(100))
-        print(" " * 40, "[3] Staff".ljust(100))
+        print(" ".ljust(55), "[1] Planning Manager".ljust(85))
+        print(" ".ljust(55), "[2] Staff Manager".ljust(85))
+        print(" ".ljust(55), "[3] Staff".ljust(85))
         print()
         print()
         print()
@@ -29,7 +29,8 @@ class MainMenu_UI:
         
 
     def input_prompt(self):
-        while True:
+        command = ""
+        while command.lower() != "q" and command.lower() != "quit":
             self.menu_output()
             command = input("Enter your command: ")
             command = command.lower()
@@ -51,8 +52,5 @@ class MainMenu_UI:
                         ssn = menu.input_prompt()
                     else:
                         print("Invalid input, please enter a number with 9 to 10 digits.")
-            elif command == "q":
-                print("See you later!")
-                break
             else:
                 print("Invalid command!")
