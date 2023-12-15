@@ -223,21 +223,19 @@ class PM_UI:
                     pass
                 else:
                     date1 = pot_date1
-            elif command == "3":
+            elif command == "4":
                 pot_date2 = input("Enter the Departure date (dd/mm/yy): ")
                 if pot_date2.lower() == "b" or pot_date2.lower() == "back":
                     pass
                 else:
                     date2 = pot_date2
-            elif command == "4":
-                pass
-            elif command == "5":
+            elif command == "3":
                 pot_time1 = input("Enter the Departure time (hh:mm): ")
                 if pot_time1.lower() == "b" or pot_time1.lower() == "back":
                     pass
                 else:
                     time1 = pot_time1
-            elif command == "6":
+            elif command == "5":
                 pot_time2 = input("Enter the Departure time (hh:mm): ")
                 if pot_time2.lower() == "b" or pot_time2.lower() == "back":
                     pass
