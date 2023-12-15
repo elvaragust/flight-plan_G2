@@ -1,16 +1,16 @@
-from logicLayer import EmployeeLogic
+"""from logicLayer import EmployeeLogic
 from logicLayer import AirplaneLogic
 from logicLayer import FlightLogic
-from logicLayer import VoyageLogic
-
+from logicLayer import VoyageLogic"""
+from logicLayer.employeeL import EmployeeL
 
 class Logic_Wrapper:
     def __init__(self) -> None:
-        self.employee_logic = EmployeeLogic()
-        self.airplane_logic = AirplaneLogic()
+        self.employee_logic = EmployeeL()
+        """self.airplane_logic = AirplaneLogic()
         self.flight_logic = FlightLogic()
         self.voyage_logic = VoyageLogic()
-
+"""
     #Employees
     def create_employee(self, employee):
         return self.employee_logic.create_employee(employee)
@@ -32,7 +32,15 @@ class Logic_Wrapper:
     def check_if_voyages_are_fully_staffed(self):
         '''Cheks if user has a voyage where there is not an a employee in it'''
         return self.employee_logic.check_if_voyages_are_fully_staffed()
-      
+    
+    def list_all_employees(self):
+        return self.employee_logic.list_all_employees()
+    
+    def get_employee_info(self, ssn):
+        return self.employee_logic.get_employee_info(ssn)
+    
+    def see_schedule_specific(self, ssn):
+        return self.employee_logic.see_schedule_specific(ssn)
 
 
     #Airplane

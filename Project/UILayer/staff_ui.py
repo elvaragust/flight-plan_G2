@@ -42,7 +42,7 @@ class S_UI:
             if command == "1":
                 """See Shift Plan"""
                 choice = S_UI()
-                menu_command = choice.see_schedule()
+                menu_command = choice.see_schedule(ssn)
             elif command == "2":
                 """Change Personal Information"""
                 choice = S_UI()
@@ -92,12 +92,12 @@ class S_UI:
                 return "b"
         
 
-    def see_schedule(self):
+    def see_schedule(self, ssn):
         command = ""
         while command.lower() != "b" and command.lower() != "back":
             os.system("cls")
             menu = Display_UI()
-            menu.print_see_schedule()
+            menu.print_see_schedule(ssn)
             command = input("Enter your command: ")
             if command.lower() == "h" or command.lower() == "home":
                 return "b"

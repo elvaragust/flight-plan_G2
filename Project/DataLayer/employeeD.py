@@ -35,7 +35,13 @@ class EmployeeData:
         self.employees[employee.social_security] = employee
         self.save_data_to_file()
 
-    def get_employee_by_id(self, social_security):
-        return self.employees.get(social_security, None)
+    def get_employee_by_id(self, ssn):
+        with open(self.FILE_NAME, 'r', encoding='utf-8') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                if row['SSN'] == ssn:
+                    return row
+        return None
 
-
+    def get_employee_list(self):
+        return list(self.employees.values())
