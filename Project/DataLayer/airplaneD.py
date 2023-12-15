@@ -2,25 +2,27 @@ import csv
 from models.airplaneM import Airplanes
 
 class AirplaneData:
-    airplanes = {}
     FILE_NAME = "dataLayer/airplane.csv"
     def __init__(self):
-        self.load_data_from_file()
+        self.airplanes = {}
 
     def load_data_from_file(self):
-        with open(self.FILE_NAME, newline='') as csvfile:
+        with open(self.FILE_NAME, 'r') as csvfile:
             reader = csv.reader(csvfile)
-            next(reader)  # Skip the header row
+            next(reader)  # Skip the header
             for row in reader:
-                name, model, manufacturer, seats = row
-                airplane = Airplanes(name, model, manufacturer, int(seats))
-                self.airplanes[name] = airplane
+                if row:  # Skip empty lines
+                    name, model, manufacturer, seats = row
+                    airplane = Airplanes(name, model, manufacturer, int(seats))
+                    self.airplanes[name] = airplane  # Store the airplane in the airplanes dictionary
                     
     def save_data_to_file(self):
         with open(self.FILE_NAME, 'a', newline='') as csvfile:
             writer = csv.writer(csvfile)
             for airplane in self.airplanes.values():
-                writer.writerow(airplane.serialize())
+                writer.writerow([airplane.name, airplane.model, airplane.manufacturer, airplane.seats])
+                
+                
                 
     def create_airplane(self, airplane: Airplanes):
         self.airplanes[airplane.name] = airplane

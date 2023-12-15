@@ -1,11 +1,17 @@
 AirplaneName,Model,Manufacturer,Seats
-Esja, De Havilland Canada DHC-8-200, Bombardier, 39
-Hekla, Airbus A320, Airbus, 186
-Katla, Boeing 737, Boeing, 126
-Baula, Airbus A320, Airbus, 186
-Skjaldbreidur, De Havilland Canada DHC-8-200, Bombardier, 39
-Hofsjokull, Airbus A320, Airbus, 186
-Kerling, Bombardier CRJ200, Bombardier, 50
-Lómagnúpur, De Havilland Canada DHC-8-200, Bombardier, 39
-Bláfjall, Airbus A320, Airbus, 186
-Torfajokull, Boeing 737, Boeing, 126
+Test Plane,Model 1,Manufacturer 1,100
+charlie,model2,toyota,900
+Test Plane,Model 1,Manufacturer 1,100
+charlies,model2,toyota,900
+Test Planedd,Model 1,Manufacturer 1,100
+charlieg,model2,toyota,900
+Test Planec,Model 1,Manufacturer 1,100
+charlie,model2,toyota,900
+Test Plane,Model 1,Manufacturer 1,100
+charlie,model2,toyota,900
+Test Plane,Model 1,Manufacturer 1,100
+charlie,model2,toyota,900
+charlies,model2,toyota,900
+Test Planedd,Model 1,Manufacturer 1,100
+charlieg,model2,toyota,900
+Test Planec,Model 1,Manufacturer 1,100
