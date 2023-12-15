@@ -19,6 +19,15 @@ class PM_UI:
         print(" ".ljust(55), "[4] See Saved Voyages".ljust(85))
         print()
         print()
+        print()
+        print()
+        print()
+        print()
+        print()
+        print()
+        print()
+        print()
+        print()
         mainmenu.print_footer()
         print(constants.NAVBAR.center(140))
         mainmenu.print_footer()
@@ -47,11 +56,10 @@ class PM_UI:
                 menu_command = choice.list_saved_voyages()
             elif command.lower() == "b" or command.lower() == "back" or command.lower() == "h" or command.lower() == "home":
                 print("Goin backwards")
-                break
             else:
                 print("Invalid command!")
             if menu_command == "b":
-                break
+                command = "b"
         
 
 
@@ -78,7 +86,7 @@ class PM_UI:
                         if pot_name.lower() == "b" or pot_name.lower() == "back":
                             pass
                         else:
-                            name = pot_name
+                            name = pot_name.capitalize()
                     elif command2.lower() == "s" or command2.lower() == "save":
                         """Senda gögn"""
                         command2 = "b"
@@ -97,7 +105,7 @@ class PM_UI:
                         if pot_name.lower() == "b" or pot_name.lower() == "back":
                             pass
                         else:
-                            name = pot_name
+                            name = pot_name.capitalize()
                     elif command2.lower() == "s" or command2.lower() == "save":
                         """Senda gögn"""
                         command2 = "b"
@@ -116,7 +124,7 @@ class PM_UI:
                         if pot_name.lower() == "b" or pot_name.lower() == "back":
                             pass
                         else:
-                            name = pot_name
+                            name = pot_name.capitalize()
                     elif command2.lower() == "s" or command2.lower() == "save":
                         """Senda gögn"""
                         command2 = "b"
@@ -135,7 +143,7 @@ class PM_UI:
                         if pot_name.lower() == "b" or pot_name.lower() == "back":
                             pass
                         else:
-                            name = pot_name
+                            name = pot_name.capitalize()
                     elif command2.lower() == "s" or command2.lower() == "save":
                         """Senda gögn"""
                         command2 = "b"
@@ -154,7 +162,7 @@ class PM_UI:
                         if pot_name.lower() == "b" or pot_name.lower() == "back":
                             pass
                         else:
-                            name = pot_name
+                            name = pot_name.capitalize()
                     elif command2.lower() == "s" or command2.lower() == "save":
                         """Senda gögn"""
                         command2 = "b"
@@ -169,53 +177,10 @@ class PM_UI:
         while command != "b" and command != "back":
             os.system("cls")
             menu = Display_UI()
-            menu.print_choose_type_of_plane_list()
+            menu.print_list_of_planes()
             command = input("Enter your command: ")
-            if command == "1":
-                """De Havilland Canada DHC-8-200"""
-                command2 = ""
-                while command2.lower() != "b" and command2.lower() != "back":
-                    os.system("cls")
-                    menu.print_list_of_planes("De Havilland Canada DHC-8-200")
-                    command2 = input("Enter your command: ")
-                    if command2 == "h" or command2 == "home":
-                        return "b"
-            elif command == "2":
-                """De Havilland Canada DHC-8-400"""
-                command2 = ""
-                while command2.lower() != "b" and command2.lower() != "back":
-                    os.system("cls")
-                    menu.print_list_of_planes("De Havilland Canada DHC-8-400")
-                    command2 = input("Enter your command: ")
-                    if command2 == "h" or command2 == "home":
-                        return "b"
-            elif command == "3":
-                """Fokker 100"""
-                command2 = ""
-                while command2.lower() != "b" and command2.lower() != "back":
-                    os.system("cls")
-                    menu.print_list_of_planes("Fokker 100")
-                    command2 = input("Enter your command: ")
-                    if command2 == "h" or command2 == "home":
-                        return "b"
-            elif command == "4":
-                """Bombardier CRJ700"""
-                command2 = ""
-                while command2.lower() != "b" and command2.lower() != "back":
-                    os.system("cls")
-                    menu.print_list_of_planes("Bombardier CRJ700")
-                    command2 = input("Enter your command: ")
-                    if command2 == "h" or command2 == "home":
-                        return "b"
-            elif command == "5":
-                """Sukhoi Superjet 100"""
-                command2 = ""
-                while command2.lower() != "b" and command2.lower() != "back":
-                    os.system("cls")
-                    menu.print_list_of_planes("Sukhoi Superjet 100")
-                    command2 = input("Enter your command: ")
-                    if command2 == "h" or command2 == "home":
-                        return "b"
+            if command.lower() == "h" or command.lower() == "home":
+                return "b"
 
     
     def register_voyage(self):
