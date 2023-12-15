@@ -33,7 +33,7 @@ class AirplaneL:
         returns: list of all airplanes
         
         """
-        return self.data_wrapper.get_airplane_list()
+        return self.data_wrapper.get_all_airplanes()
 
 #    def edit_airplane_info(self, airplane_name, update_info):
 #        if not self.data_wrapper.get_airplane_info(airplane_name):

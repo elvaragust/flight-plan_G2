@@ -1,9 +1,11 @@
 
 from logicLayer.employeeL import EmployeeL
+from logicLayer.airplaneL import AirplaneL
 
 class Logic_Wrapper:
     def __init__(self) -> None:
         self.employee_logic = EmployeeL()
+        self.airplane_logic = AirplaneL()
 
 
     def create_employee(self, employee):
@@ -77,7 +79,7 @@ class Logic_Wrapper:
         returns: list of all airplanes
         
         """
-        return self.airplane_logic.get_all_airplanes()
+        return self.airplane_logic.get_airplane_list()
 
     #Destinations
 
