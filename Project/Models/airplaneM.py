@@ -6,10 +6,5 @@ class Airplanes:
         self.manufacturer = manufacturer
         self.seats = seats
 
-    def serialize(self) -> dict:
-        return {
-            'name': self.name,
-            'model': self.model,
-            'manufacturer': self.manufacturer,
-            'seats': self.seats
-        }
+def serialize(self) -> list:
+    return [self.name, self.model, self.manufacturer, self.seats]

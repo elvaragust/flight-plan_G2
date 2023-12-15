@@ -1,20 +1,21 @@
 import csv
 from models.airplaneM import Airplanes
+
 class AirplaneData:
     airplanes = {}
-    FILE_NAME = "airplanes.csv"
+    FILE_NAME = "dataLayer/airplane.csv"
     def __init__(self):
         self.load_data_from_file()
 
     def load_data_from_file(self):
         with open(self.FILE_NAME, newline='') as csvfile:
             reader = csv.reader(csvfile)
-            next(reader)  # Skips the header row
+            next(reader)  # Skip the header row
             for row in reader:
                 name, model, manufacturer, seats = row
                 airplane = Airplanes(name, model, manufacturer, int(seats))
-                self.airplanes[airplane.name] = airplane
-                
+                self.airplanes[name] = airplane
+                    
     def save_data_to_file(self):
         with open(self.FILE_NAME, 'a', newline='') as csvfile:
             writer = csv.writer(csvfile)
@@ -30,3 +31,4 @@ class AirplaneData:
 
     def get_airplane_list(self):
         return list(self.airplanes.values())
+    

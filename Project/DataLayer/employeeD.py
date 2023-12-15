@@ -5,7 +5,7 @@ from models.employeeM import Employees
 
 class EmployeeData:
     employees = {}
-    FILE_NAME = "employees.csv"
+    FILE_NAME = "employee.csv"
 
     def __init__(self):
         self.load_data_from_file()
