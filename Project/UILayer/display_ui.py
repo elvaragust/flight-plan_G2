@@ -1,4 +1,4 @@
-import constants
+from uiLayer import constants
 
 class Display_UI:
 

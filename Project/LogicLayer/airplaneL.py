@@ -2,7 +2,7 @@ from dataLayer.logic_data_wrapper import LogicDataWrapper
 
 class AirplaneL:
     def __init__(self, data_wrapper):
-        self.data_wrapper = data_wrapper
+        self.data_wrapper = LogicDataWrapper()
 
     def register_airplane(self, airplane_info):
         self.data_wrapper.create_airplane(airplane_info)

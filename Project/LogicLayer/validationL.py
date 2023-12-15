@@ -1,4 +1,4 @@
-from dataLayer.logic_data_wrapper import LogicDataWrapper
+
 
 class ValidationL():
     

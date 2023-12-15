@@ -17,8 +17,8 @@ class LogicDataWrapper:
     def get_airplane_info(self, airplane_name):
         return self.airplane_data.get_airplane_by_name(airplane_name)
 
-    def edit_airplane(self, airplane_name, update_info):
-        self.airplane_data.edit_airplane(airplane_name, update_info)
+#    def edit_airplane(self, airplane_name, update_info):
+#        self.airplane_data.edit_airplane(airplane_name, update_info)
 
     # employeeL ------------------------------------------------------------
     def create_employee(self, employee_info):

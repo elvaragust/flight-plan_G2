@@ -2,10 +2,10 @@ from dataLayer.logic_data_wrapper import LogicDataWrapper
 
 class EmployeeL():
     def __init__(self, data_wrapper):
-        self.data_wrapper = data_wrapper
+        self.data_wrapper = LogicDataWrapper()
 
-    def create_employee(self, employee):
-        self.data_wrapper.create_voyage(employee)
+    def create_employees(self, employee):
+        self.data_wrapper.create_employee(employee)
         
     def get_employee_info(self, ssn):
         return self.data_wrapper.get_employee_info(ssn)

@@ -2,7 +2,7 @@ from dataLayer.logic_data_wrapper import LogicDataWrapper
 
 class PlanningManagerL:
     def __init__(self, data_wrapper):
-        self.data_wrapper = data_wrapper
+        self.data_wrapper = LogicDataWrapper()
 
     def register_voyage(self, voyage_info):
         self.data_wrapper.create_voyage(voyage_info)
