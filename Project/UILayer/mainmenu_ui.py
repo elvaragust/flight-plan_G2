@@ -55,11 +55,11 @@ class MainMenu_UI:
                 ssn = ""
                 while ssn.lower() != "b":
                     ssn = input("Enter your social security number: ")
-                    if ssn.isdigit() and 9 <= len(ssn) <= 10:
+                    if ssn.isdigit() and len(ssn) == 10:
                         menu = S_UI()
                         ssn = menu.input_prompt()
                     else:
-                        print("Invalid input, please enter a number with 9 to 10 digits.")
+                        print("Invalid input, Number needs to be 10 digits.")
             elif command.lower() == "q" or command.lower() == "quit":
                 pass
             else:

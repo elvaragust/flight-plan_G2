@@ -50,7 +50,7 @@ class ValidationL():
         elif len(phone) != 7:
             raise ValueError("Phone number should contain 7 numbers")
         
-        elif not phone.isdigit:
+        elif not phone.isdigit():
             raise ValueError("Phone numbe rcan only contain digits")
         
         else:
@@ -154,7 +154,7 @@ class ValidationL():
         if ssn == "":
             raise ValueError("SSN cannot be empty")
         
-        elif not ssn.isdigit:
+        elif not ssn.isdigit():
             raise ValueError("Can only be numbers")
         
         elif len(ssn) != 10:

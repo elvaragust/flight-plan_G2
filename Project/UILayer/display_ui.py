@@ -330,6 +330,25 @@ class Display_UI:
         print(constants.NAVBAR.center(140))
         boarder.print_footer()
 
+    def print_list_of_employees_working(self, working=""):
+        """Dict{List}: SSN: NAME, RANK, """
+        boarder = Display_UI()
+        boarder.print_header()
+        blabla = {1606982929: ["Gutti", "Flugþjónn", "5812345", "guttifreyr@hotmail.com", "Yes"], 1512682323: ["Jónas", "Farþegi", "7741234", "jonashallgrims@gmail.is", "No"]}
+        if working == "Yes":
+            print(f"-List of Staff Who Are Working Today-".center(140))
+        elif working == "No":
+            print(f"-List of Staff Who Are Not Working Today-".center(140))
+        print(constants.DASH * 140)
+        print("Name".center(34),"|", "SSN".center(20), "|", "Rank".center(19), "|", "Phone Number".center(20), "|", "Email".center(34))
+        print(constants.DASH * 140)
+        for key, value in blabla.items():
+            if value[1] == working:
+                print(value[0].center(34),"|", f"{key}".center(20), "|", value[1].center(19), "|", value[2].center(20), "|", value[3].center(34))
+        boarder.print_footer()
+        print(constants.NAVBAR.center(140))
+        boarder.print_footer()
+
     def print_choose_type_of_employee(self):
         boarder = Display_UI()
         boarder.print_header()
