@@ -249,6 +249,9 @@ class PM_UI:
                     time2 = pot_time2
             elif command.lower() == "h" or command.lower() == "home":
                 return "b"
+            
+            elif command.lower() == "s":
+                command = "b"
 
     #def edit_voyage_info(self):
      #   command = ""

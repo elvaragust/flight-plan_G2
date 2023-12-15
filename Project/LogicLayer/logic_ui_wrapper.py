@@ -16,7 +16,7 @@ class Logic_Wrapper:
         """
         return self.employee_logic.create_employees(employee)
 
-    def get_all_employees(self):
+    def list_all_employees(self):
         """ gets all employees
         
         args: None
@@ -24,7 +24,7 @@ class Logic_Wrapper:
         returns: list of all employees
         
         """
-        return self.employee_logic.get_all_employees()
+        return self.employee_logic.list_all_employees()
 
     def edit_employee(self, employee):
         """ takes in employee object and forwarsd it to the data Layer to edit
