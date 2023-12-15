@@ -56,6 +56,7 @@ class PM_UI:
                 menu_command = choice.list_saved_voyages()
             elif command.lower() == "b" or command.lower() == "back" or command.lower() == "h" or command.lower() == "home":
                 print("Goin backwards")
+                command = "b"
             else:
                 print("Invalid command!")
             if menu_command == "b":

@@ -65,12 +65,12 @@ class SM_UI:
                 choice = SM_UI()
                 menu_command = choice.find_employee()
 
-            elif command == "4":
+            elif command == "5":
                 """Select Crew on Voyages"""
                 choice = SM_UI()
                 menu_command = choice.select_crew_on_voyages()
 
-            elif command == "5":
+            elif command == "6":
                 """See Schedule"""
                 choice = SM_UI()
                 menu_command = choice.see_schedules()
@@ -291,6 +291,8 @@ class SM_UI:
                     command2 = input("Enter your command: ")
                     if command2.lower() == "h" or command2.lower() == "home":
                         return "b"
+            elif command == "4":
+                pass
             elif command.lower() == "h" or command.lower() == "home":
                 return "b"
 
@@ -299,8 +301,21 @@ class SM_UI:
         while command != "b":
             os.system("cls")
             menu = Display_UI()
-            menu.print_select_crew()
+            menu.print_existing_voyages()
             command = input("Enter your command: ")
+            if command.lower() == "b" or command.lower() == "back":
+                pass
+            elif command.lower() == "h" or command.lower() == "home":
+                return "b"
+            else:
+                command2 = ""
+                while command2.lower() != "b" and command2.lower() != "back":
+                    os.system("cls")
+                    menu.print_select_crew()
+                    command2 = input("Enter your command: ")
+                    if command2.lower() == "h" or command2.lower() == "home":
+                        return "b"
+
 
     #def edit_crew_on_voyages(self):
      #   command = ""
@@ -319,11 +334,7 @@ class SM_UI:
         while command.lower() != "b" and command.lower() != "back":
             os.system("cls")
             menu = Display_UI()
-            menu.print_header()
-            print()
-            menu.print_footer()
-            print(constants.NAVBAR.center(140))
-            menu.print_footer()
+            menu.print_see_schedule()
             command = input("Enter your command: ")
 
     def copy_info(self):

@@ -338,8 +338,8 @@ class Display_UI:
         print(" ".ljust(55), "[1] All Employees".ljust(85))
         print(" ".ljust(55), "[2] Pilots".ljust(85))
         print(" ".ljust(55), "[3] Flight Attendants".ljust(85))
-        print()
-        print()
+        print(" ".ljust(55), "[4] Employees who are working today")
+        print(" ".ljust(55), "[5] Employees who are not working today")
         print()
         print()
         print()
@@ -360,6 +360,8 @@ class Display_UI:
         boarder.print_header()
         print(f"-Airplane List-".center(140))
         print(constants.DASH * 140)
+        print("Eitthvað")
+        print(constants.DASH * 140)
         #for key, value in plane_type.items():
          #   pass
         boarder.print_footer()
@@ -371,7 +373,9 @@ class Display_UI:
         boarder.print_header()
         print("-Saved Voyages-".center(140))
         print(constants.DASH * 140)
-        # for key, value in voyages.items()
+        print("Eitthvað")
+        print(constants.DASH * 140)
+        # for key, value in dict.items()
             #
         boarder.print_footer()
         print(constants.NAVBAR.center(140))
@@ -381,6 +385,12 @@ class Display_UI:
         boarder = Display_UI()
         boarder.print_header()
         print("-Schedule-".center(140))
+        print(constants.DASH * 140)
+        print("Eitthvað")
+        """print(Dagsetning, )"""
+        print(constants.DASH * 140)
+        # for key, value in dict.items()
+            #
         boarder.print_footer()
         print(constants.NAVBAR.center(140))
         boarder.print_footer()
