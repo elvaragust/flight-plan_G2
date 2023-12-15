@@ -409,16 +409,16 @@ class Display_UI:
         boarder.print_footer()
 
     def print_list_of_planes(self):
-        """Prints the list of planes"""
-        """Dict{List}: NAME: TYPE, MANUFACTURER, SEATS"""
         boarder = Display_UI()
         boarder.print_header()
-        print(f"-Airplane List-".center(140))
+        print(f"-List of Airplanes-".center(140))
         print(constants.DASH * 140)
-        print("Eitthvað")
+        print("Airplane Name".center(34),"|", "Model".center(20), "|", "Manufacturer".center(19), "|", "Seats".center(20))
         print(constants.DASH * 140)
-        #for key, value in plane_type.items():
-         #   pass
+
+        planes = self.logic_wrapper.get_all_airplanes()
+        for plane in planes:
+            print(plane['AirplaneName'].ljust(34),"|",plane['Model'].center(20), "|", plane['Manufacturer'].ljust(19), "|", plane['Seats'].center(20))
         boarder.print_footer()
         print(constants.NAVBAR.center(140))
         boarder.print_footer()

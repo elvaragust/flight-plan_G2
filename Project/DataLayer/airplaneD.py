@@ -22,6 +22,7 @@ class AirplaneData:
             for row in reader:
                 airplane_list.append(row)  # append the row directly
         return airplane_list
+    
             
     def save_data_to_file(self):
         """ saves the airplane list to the csv file
