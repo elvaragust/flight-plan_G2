@@ -50,7 +50,7 @@ class ValidationL():
         elif len(phone) != 7:
             raise ValueError("Phone number should contain 7 numbers")
         
-        elif not phone.isdigit:
+        elif not phone.isdigit():
             raise ValueError("Phone numbe rcan only contain digits")
         
         else:
@@ -63,7 +63,7 @@ class ValidationL():
         elif len(phone) != 7:
             raise ValueError("Phone number should contain 7 numbers")
         
-        elif not phone.isdigit:
+        elif not phone.isdigit():
             raise ValueError("Phone numbe rcan only contain digits")
         
         else:
@@ -73,7 +73,7 @@ class ValidationL():
     def validate_date(self, date):
         date_validation = [int(i) for i in date.split("/")]
         
-        if not date_validation.isdigit:
+        if not date_validation.isdigit():
             raise ValueError("Can only be numbers between the /")
         #day
         if date_validation[0] > 31:
@@ -89,7 +89,7 @@ class ValidationL():
     def validate_time(self, time):
         time_validation = [int(i) for i in time.split(":")]
         
-        if not time_validation.isdigit:
+        if not time_validation.isdigit():
             raise ValueError("Can only contain numbers between the :")
         
         if time_validation[0] > 23:
