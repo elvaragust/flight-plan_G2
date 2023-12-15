@@ -1,9 +1,10 @@
 from uiLayer import constants
+from logicLayer.logic_ui_wrapper import Logic_Wrapper
 
 class Display_UI:
 
     def __init__(self):
-        pass
+        self.logic_wrapper = Logic_Wrapper()
 
     def print_header(self):
         print(constants.EQUALS * 140)
@@ -312,23 +313,58 @@ class Display_UI:
         boarder.print_footer()
 
 
-    def print_list_of_employees(self, rank=""):
+    def print_list_of_employees(self):
         """Dict{List}: SSN: NAME, RANK, """
         boarder = Display_UI()
         boarder.print_header()
-        blabla = {1606982929: ["Gutti", "Flugþjónn", "5812345", "guttifreyr@hotmail.com"], 1512682323: ["Jónas", "Farþegi", "7741234", "jonashallgrims@gmail.is"]}
-        print(f"-List of {rank}-".center(140))
+        print(f"-List of Employees-".center(140))
         print(constants.DASH * 140)
         print("Name".center(34),"|", "SSN".center(20), "|", "Rank".center(19), "|", "Phone Number".center(20), "|", "Email".center(34))
         print(constants.DASH * 140)
-        for key, value in blabla.items():
-            if value[1] == rank:
-                print(value[0].center(34),"|", f"{key}".center(20), "|", value[1].center(19), "|", value[2].center(20), "|", value[3].center(34))
-            elif rank == "":
-                print(value[0].center(34),"|", f"{key}".center(20), "|", value[1].center(19), "|", value[2].center(20), "|", value[3].center(34))
+
+        employees = self.logic_wrapper.list_all_employees()
+        for employee in employees:
+            print(employee['Name'].ljust(34),"|",employee['SSN'].center(20), "|", employee['Rank'].ljust(19), "|", employee['PhoneNumber'].center(20), "|", employee['Email'].ljust(34))
+
         boarder.print_footer()
         print(constants.NAVBAR.center(140))
         boarder.print_footer()
+
+    
+    def print_list_of_pilots(self):
+        boarder = Display_UI()
+        boarder.print_header()
+        print(f"-List of Employees-".center(140))
+        print(constants.DASH * 140)
+        print("Name".center(34),"|", "SSN".center(20), "|", "Rank".center(19), "|", "Phone Number".center(20), "|", "Email".center(34))
+        print(constants.DASH * 140)
+
+        employees = self.logic_wrapper.list_all_employees()
+        for employee in employees:
+            if employee['Rank'] == "Pilot":
+                print(employee['Name'].ljust(34),"|",employee['SSN'].ljust(20), "|", employee['Rank'].ljust(19), "|", employee['PhoneNumber'].ljust(20), "|", employee['Email'].ljust(34))
+
+        boarder.print_footer()
+        print(constants.NAVBAR.center(140))
+        boarder.print_footer()
+
+    def print_list_of_flight_attendant(self):
+        boarder = Display_UI()
+        boarder.print_header()
+        print(f"-List of Employees-".center(140))
+        print(constants.DASH * 140)
+        print("Name".center(34),"|", "SSN".center(20), "|", "Rank".center(19), "|", "Phone Number".center(20), "|", "Email".center(34))
+        print(constants.DASH * 140)
+
+        employees = self.logic_wrapper.list_all_employees()
+        for employee in employees:
+            if employee['Rank'] == 'Flight Attendant':
+                print(employee['Name'].ljust(34),"|",employee['SSN'].ljust(20), "|", employee['Rank'].ljust(19), "|", employee['PhoneNumber'].ljust(20), "|", employee['Email'].ljust(34))
+
+        boarder.print_footer()
+        print(constants.NAVBAR.center(140))
+        boarder.print_footer()
+
 
     def print_choose_type_of_employee(self):
         boarder = Display_UI()
@@ -377,10 +413,29 @@ class Display_UI:
         print(constants.NAVBAR.center(140))
         boarder.print_footer()
 
-    def print_see_schedule(self):
+    """def print_see_schedule(self, ssn):
         boarder = Display_UI()
         boarder.print_header()
         print("-Schedule-".center(140))
+        print()
+        schedule = self.logic_wrapper.see_schedule_specific(ssn)
+        print(schedule)
+        boarder.print_footer()
+        print(constants.NAVBAR.center(140))
+        boarder.print_footer()"""
+
+    def print_see_schedule(self, ssn):
+        boarder = Display_UI()
+        boarder.print_header()
+        print(f"-Schedule {ssn}-".center(140))
+        print(constants.DASH * 140)
+        print("Flight Number".center(12),"|", "Departure Date".center(17), "|", "Departure Time".center(17), "|", "Arrival Date".center(12), "|", "Arrival Time".center(13),  "|", "From Destination".center(14), "|", "To Destination".center(12), "|", "Airplane Name".center(12))
+        print(constants.DASH * 140)
+
+        schedule = self.logic_wrapper.see_schedule_specific(ssn)
+        for sched in schedule:
+            print(sched['FlightNumber'].center(13),"|",sched['DepartureDate'].center(17), "|", sched['DepartureTime'].center(17), "|", sched['ArrivalDate'].center(12), "|", sched['ArrivalTime'].center(13), "|", sched['FromDestination'].ljust(16), "|", sched['ToDestination'].ljust(14), "|", sched['AirplaneName'].ljust(13))
+
         boarder.print_footer()
         print(constants.NAVBAR.center(140))
         boarder.print_footer()

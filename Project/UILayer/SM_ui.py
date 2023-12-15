@@ -318,7 +318,7 @@ class SM_UI:
                 command2 = ""
                 while command2.lower() != "b" and command2.lower() != "back":
                     os.system("cls")
-                    menu.print_list_of_employees("Flugþjónn")
+                    menu.print_list_of_pilots()
                     command2 = input("Enter your command: ")
                     if command2.lower() == "h" or command2.lower() == "home":
                         return "b"
@@ -326,7 +326,7 @@ class SM_UI:
                 command2 = ""
                 while command2.lower() != "b" and command2.lower() != "back":
                     os.system("cls")
-                    menu.print_list_of_employees("Farþegi")
+                    menu.print_list_of_flight_attendant()
                     command2 = input("Enter your command: ")
                     if command2.lower() == "h" or command2.lower() == "home":
                         return "b"
