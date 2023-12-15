@@ -11,6 +11,7 @@ class MainMenu_UI:
         self.logic_ui_wrapper = Logic_Wrapper()
 
     def menu_output(self):
+        """Prints the main menu"""
         os.system("cls")
         mainmenu = Display_UI()
         mainmenu.print_header()
@@ -37,6 +38,7 @@ class MainMenu_UI:
         
 
     def input_prompt(self):
+        """Prompts the user for input and calls the appropriate functions"""
         command = ""
         while command.lower() != "q" and command.lower() != "quit":
             self.menu_output()

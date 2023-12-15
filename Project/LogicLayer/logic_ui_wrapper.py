@@ -1,96 +1,130 @@
-"""from logicLayer import EmployeeLogic
-from logicLayer import AirplaneLogic
-from logicLayer import FlightLogic
-from logicLayer import VoyageLogic"""
+
 from logicLayer.employeeL import EmployeeL
 
 class Logic_Wrapper:
     def __init__(self) -> None:
         self.employee_logic = EmployeeL()
-        """self.airplane_logic = AirplaneLogic()
-        self.flight_logic = FlightLogic()
-        self.voyage_logic = VoyageLogic()
-"""
-    #Employees
+
+
     def create_employee(self, employee):
-        return self.employee_logic.create_employee(employee)
+        """ takes in employee object and forwarsd it to the data Layer
+        
+        args: employee object
+        
+        returns: None
+        
+        """
+        return self.employee_logic.create_employees(employee)
 
     def get_all_employees(self):
+        """ gets all employees
+        
+        args: None
+        
+        returns: list of all employees
+        
+        """
         return self.employee_logic.get_all_employees()
 
     def edit_employee(self, employee):
+        """ takes in employee object and forwarsd it to the data Layer to edit
+        
+        args: employee object
+        
+        returns: None
+        
+        """
         self.employee_logic.edit_employee(employee)
 
-    def get_one_employee(self, nid):
-        '''searches for one employee'''
-        return self.employee_logic.get_one_employee(nid)
-    
-    def get_week_work(self, nid, date):
-        '''Gets a list of voyages that the nid is working on'''
-        return self.employee_logic.get_week_work(nid, date)
-    
-    def check_if_voyages_are_fully_staffed(self):
-        '''Cheks if user has a voyage where there is not an a employee in it'''
-        return self.employee_logic.check_if_voyages_are_fully_staffed()
-    
-    def list_all_employees(self):
-        return self.employee_logic.list_all_employees()
     
     def get_employee_info(self, ssn):
+        """ finds an employee by id and returns it
+        
+        args: id of the employee
+        
+        returns: employee object
+        
+        """
         return self.employee_logic.get_employee_info(ssn)
     
     def see_schedule_specific(self, ssn):
+        """ finds an employee by id and returns their schedule
+        
+        args: id of the employee
+        
+        returns: schedule of the employee
+        
+        """
         return self.employee_logic.see_schedule_specific(ssn)
 
 
     #Airplane
     def create_airplane(self, airplane):
+        """ takes in airplane object and forwards it to the data Layer
+        
+        args: airplane object
+        
+        returns: None
+        
+        """
         return self.airplane_logic.create_airplane(airplane)
 
     def get_all_airplanes(self):
+        """ gets all airplanes
+        
+        args: None
+        
+        returns: list of all airplanes
+        
+        """
         return self.airplane_logic.get_all_airplanes()
 
     #Destinations
 
     def create_destination(self, destination):
-        """Takes in destination object and forwards it to the data layer"""
+        """ takes in destination object and forwards it to the data Layer
+        
+        args: destination object
+        
+        returns: None
+        
+        #UNFINISHED
+        
+        """
+ 
         self.destination_logic.create_destination(destination)
 
     def get_all_destinations(self):
-        """Gets all destinations"""
+        """ gets all destinations
+        
+        args: None
+        
+        returns: list of all destinations
+        
+        """
         return self.destination_logic.get_all_destinations()
 
-    def update_destination(self, destination):
-        '''Takes in name of an destination and forwards it to data layer'''
-        return self.destination_logic.update_destination(destination)
         
     #Voyage
     def get_all_voyages(self):
+        """ gets all voyages
+        
+        args: None
+        
+        returns: list of all voyages
+        
+        """
         return self.voyage.get_all_voyages()
 
 
     def create_voyage(self, voyage):
-        """Takes in voyage object and forwards it to the data layer"""
+        """ creates a voyage and saves it to the csv file
+        
+        args: voyage object
+        
+        returns: None
+        
+        """
+        
         return self.voyage.create_voyage(voyage)
 
-    def check_day(self, date):
-        '''checks if people are working, not working on perticuler 
-        day and also gets every voyages on that day'''
-        return self.voyage.check_day(date)
-
-    def check_week(self, date): #enter the first day in that week
-        '''checks if people are working, not working on perticuler 
-        week and also gets every voyages on that week'''
-        return self.voyage.check_week(date)
-
-    def generte_voyage_nr(self):
-        '''Create voyage number, counts all voyages and then gives it a number'''
-        return self.voyage.generte_voyage_nr()
-    
-    def get_all_pilots(self):
-        '''gets all pilots'''
-        return self.voyage.get_all_pilots()
-    
-    def get_all_crew(self):
-        '''gets all crew'''
-        return self.voyage.get_all_crew()

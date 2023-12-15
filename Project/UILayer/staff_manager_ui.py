@@ -9,6 +9,7 @@ class SM_UI:
         self.validation = ValidationL()
 
     def menu_output(self):
+        """Prints the staff manager menu"""
         os.system("cls")
         mainmenu = Display_UI()
         mainmenu.print_header()
@@ -34,6 +35,7 @@ class SM_UI:
         mainmenu.print_footer()
 
     def input_prompt(self):
+        """Prompts the user for input and calls the appropriate functions"""
         menu_command = ""
         command = ""
         while command.lower() != "b" and command.lower() != "back":
@@ -89,6 +91,7 @@ class SM_UI:
                 command = "b"
 
     def register_employee(self):
+        """Prompts the user for input and calls the functions"""
         command = ""
         name = ""
         rank = ""
@@ -314,6 +317,7 @@ class SM_UI:
 
     
     def change_employee_info(self, employee_ssn):
+        """Prompts the user for inputs for changing employee info and calls the functions"""
         command = ""
         name = ""
         rank = ""
@@ -468,6 +472,7 @@ class SM_UI:
                 return "b"
             
     def find_employee(self):
+        """Prompts the user for input and calls the function to find an employee"""
         command = ""
         while command.lower() != "b" and command.lower() != "back":
             os.system("cls")
@@ -478,6 +483,7 @@ class SM_UI:
                 return "b"
             
     def list_employees(self):
+        """Prompts the user for input and calls the function to list employees"""
         command = ""
         while command.lower() != "b" and command.lower() != "back":
             os.system("cls")
@@ -528,6 +534,7 @@ class SM_UI:
                 return "b"
 
     def select_crew_on_voyages(self):
+        """Prompts the user for input and calls the function to select crew on voyages"""
         command = ""
         while command != "b":
             os.system("cls")
@@ -561,6 +568,7 @@ class SM_UI:
             #command = input("Enter your command: ")
 
     def see_schedules(self):
+        """Prompts the user for input and calls the function to see schedules"""
         command = ""
         while command.lower() != "b" and command.lower() != "back":
             os.system("cls")

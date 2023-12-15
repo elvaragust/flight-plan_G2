@@ -19,6 +19,13 @@ class VoyageData:
 #                self.voyages[voyage_id] = voyage
 
     def get_all_voyages(self):
+        """ returns a list of all voyages
+        
+        args: None
+        
+        returns: list of all voyages
+        
+        """
         voyage_list = []
         with open(self.FILE_NAME, 'r', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
@@ -27,15 +34,36 @@ class VoyageData:
         return voyage_list
 
     def save_data_to_file(self):
+        """ saves the voyage list to the csv file
+        
+        args: None
+        
+        returns: None
+        
+        """
         with open(self.FILE_NAME, 'a', newline='') as csvfile:
             writer = csv.writer(csvfile)
             for voyage in self.voyages.values():
                 writer.writerow(voyage.serialize())
 
     def create_voyage(self, voyage: Voyage):
+        """ creates a voyage and saves it to the csv file
+        
+        args: voyage object
+        
+        returns NONE
+        """
+        
         self.voyages[voyage.voyage_id] = voyage
         self.save_data_to_file()
 
     def get_voyage_by_id(self, voyage_id):
+        """ finds a voyage by id and returns it
+        
+        args: id of the voyage
+        
+        returns: voyage object
+        
+        """
         return self.voyages.get(voyage_id, None)
 

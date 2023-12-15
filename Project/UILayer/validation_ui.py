@@ -2,6 +2,13 @@
 class ValidationL():
     
     def validate_employee_name(self, name):
+        """ validates the name of the employee
+        
+        args: name of the employee
+        
+        returns: True if the name is valid
+        
+        """
         name_without_spaces = name.replace(' ', '')
         if name_without_spaces == "":
             raise ValueError("Name cannot be empty")
@@ -17,6 +24,13 @@ class ValidationL():
         
         
     def validate_employee_rank(self, rank):
+        """ validates the rank of the employee
+        
+        args: rank of the employee
+        
+        returns: True if the rank is valid
+        
+        """
         rank_without_spaces = rank.replace(' ', '')
         
         if rank_without_spaces == "":
@@ -30,6 +44,13 @@ class ValidationL():
         
         
     def validate_email(self, email):
+        """ validates the email of the employee
+        
+        args: email of the employee
+        
+        returns: True if the email is valid
+        
+        """
         if "@" not in email:
             raise ValueError("Email needs to have a: @")
         
@@ -44,6 +65,13 @@ class ValidationL():
         
         
     def validate_phone(self, phone):
+        """ validates the phone of the employee
+        
+        args: phone of the employee
+        
+        returns: True if the phone is valid
+        
+        """
         if phone[0] == "+":
             raise ValueError("Phone number should not have the area code")
         
@@ -57,6 +85,13 @@ class ValidationL():
             return True
         
     def validate_employee_landline(self, phone):
+        """ validates the phone of the employee
+        
+        args: phone of the employee
+        
+        returns: True if the phone is valid
+        
+        """
         if phone[0] == "+":
             raise ValueError("Phone number should not have the area code")
         
@@ -71,6 +106,13 @@ class ValidationL():
     
     
     def validate_date(self, date):
+        """ validates date
+        
+        args: date
+        
+        returns: True if the date is valid
+        
+        """
         date_validation = [int(i) for i in date.split("/")]
         
         if not date_validation.isdigit():
@@ -87,6 +129,13 @@ class ValidationL():
         
         
     def validate_time(self, time):
+        """ validates the time
+        
+        args: time
+        
+        returns: True if the time is valid
+        
+        """
         time_validation = [int(i) for i in time.split(":")]
         
         if not time_validation.isdigit():
@@ -102,6 +151,13 @@ class ValidationL():
             return True
         
     def validate_licence(self, pilot_license):
+        """ validates the licence of the employee
+        
+        args: licence of the employee
+        
+        returns: True if the licence is valid
+        
+        """
         licence_without_spaces = pilot_license.replace(' ', '')
         
         if licence_without_spaces == "":
@@ -142,6 +198,13 @@ class ValidationL():
 #        pass       
         
     def validate_employee_address(self, address):
+        """ validates the address of the employee
+        
+        args: address of the employee
+        
+        returns: True if the address is valid
+        
+        """
         if address == "":
             raise ValueError("Address cannot be empty")
         elif len(address) > 50:
@@ -151,6 +214,13 @@ class ValidationL():
     
     
     def validate_employee_ssn(self, ssn):
+        """ validates the ssn of the employee
+        
+        args: ssn of the employee
+        
+        returns: True if the ssn is valid
+        
+        """
         if ssn == "":
             raise ValueError("SSN cannot be empty")
         

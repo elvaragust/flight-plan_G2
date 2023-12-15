@@ -8,6 +8,7 @@ class S_UI:
         pass
 
     def menu_output(self):
+        """Prints the main menu"""
         os.system("cls")
         mainmenu = Display_UI()
         mainmenu.print_header()
@@ -33,6 +34,7 @@ class S_UI:
         mainmenu.print_footer()
 
     def input_prompt(self, ssn):
+        """Prompts the user for input and calls the function for the change menu"""
         menu_command = ""
         command = ""
         while command.lower() != "b" and command.lower() != "back":
@@ -58,6 +60,7 @@ class S_UI:
                 return "b"
 
     def change_basic_info(self):
+        """Prompts the user for input and calls the function to change basic info"""
         command = ""
         while command != "b" and command != "back":
             os.system("cls")
@@ -93,6 +96,7 @@ class S_UI:
         
 
     def see_schedule(self, ssn):
+        """Prompts the user for input and calls the function to see schedule"""
         command = ""
         while command.lower() != "b" and command.lower() != "back":
             os.system("cls")
