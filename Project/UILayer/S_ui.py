@@ -21,6 +21,13 @@ class S_UI:
         print()
         print()
         print()
+        print()
+        print()
+        print()
+        print()
+        print()
+        print()
+        print()
         mainmenu.print_footer()
         print(constants.NAVBAR.center(140))
         mainmenu.print_footer()
@@ -80,7 +87,7 @@ class S_UI:
                 if pot_home_address.lower() == "b" or pot_home_address.lower() == "back":
                     pass
                 else:
-                    home_address = pot_home_address
+                    home_address = pot_home_address.capitalize()
             elif command.lower() == "h" or command.lower() == "home":
                 return "b"
         

@@ -24,6 +24,13 @@ class MainMenu_UI:
         print()
         print()
         print()
+        print()
+        print()
+        print()
+        print()
+        print()
+        print()
+        print()
         mainmenu.print_footer()
         print("[Q]uit".center(140))
         mainmenu.print_footer()
@@ -54,5 +61,9 @@ class MainMenu_UI:
                         ssn = menu.input_prompt()
                     else:
                         print("Invalid input, please enter a number with 9 to 10 digits.")
+            elif command.lower() == "q" or command.lower() == "quit":
+                pass
             else:
                 print("Invalid command!")
+        os.system("cls")
+        print("See you Later!")
