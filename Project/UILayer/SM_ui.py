@@ -154,14 +154,19 @@ class SM_UI:
                     command2 = input("Enter your command: ")
                     if command2 == "1":
                         plane_license = constants.PLANE1
+                        command2 = "b"
                     elif command2 == "2":
                         plane_license = constants.PLANE2
+                        command2 = "b"
                     elif command2 == "3":
                         plane_license = constants.PLANE3
+                        command2 = "b"
                     elif command2 == "4":
                         plane_license = constants.PLANE4
+                        command2 = "b"
                     elif command2 == "5":
                         plane_license = constants.PLANE5
+                        command2 = "b"
                     elif command2.lower() == "h" or command2.lower() == "home":
                         return "b"
             elif command == "8":
@@ -182,11 +187,19 @@ class SM_UI:
             menu.print_edit_staff_information_management()
             command = input("Enter your command: ")
             if command == "1":
-                pot_rank = input("Enter the Employee's rank: ")
-                if pot_rank.lower() == "b" or pot_rank.lower() == "back":
-                    pass
-                else:
-                    rank = pot_rank
+                command2 = ""
+                while command2.lower() != "b" and command2.lower() != "back":
+                    os.system("cls")
+                    menu.print_choose_rank()
+                    command2 = input("Enter your command: ")
+                    if command2 == "1":
+                        rank = "Pilot"
+                        command2 = "b"
+                    elif command2 == "2":
+                        rank = "Flight Attendant"
+                        command2 = "b"
+                    elif command2.lower() == "h" or command2.lower() == "home":
+                        return "b"
             elif command == "2":
                 pot_email = input("Enter the Employee's email: ")
                 if pot_email.lower() == "b" or pot_email.lower() == "back":
@@ -206,11 +219,28 @@ class SM_UI:
                 else:
                     landline = pot_landline
             elif command == "5":
-                pot_plane_license = input("Enter the Employee's plane license: ")
-                if pot_plane_license.lower() == "b" or pot_plane_license.lower() == "back":
-                    pass
-                else:
-                    plane_license = pot_plane_license
+                command2 = ""
+                while command2.lower() != "b" and command2.lower() != "back":
+                    os.system("cls")
+                    menu.print_choose_license()
+                    command2 = input("Enter your command: ")
+                    if command2 == "1":
+                        plane_license = constants.PLANE1
+                        command2 = "b"
+                    elif command2 == "2":
+                        plane_license = constants.PLANE2
+                        command2 = "b"
+                    elif command2 == "3":
+                        plane_license = constants.PLANE3
+                        command2 = "b"
+                    elif command2 == "4":
+                        plane_license = constants.PLANE4
+                        command2 = "b"
+                    elif command2 == "5":
+                        plane_license = constants.PLANE5
+                        command2 = "b"
+                    elif command2.lower() == "h" or command2.lower() == "home":
+                        return "b"
             elif command == "6":
                 pot_home_address = input("Enter the Employee's home address: ")
                 if pot_home_address.lower() == "b" or pot_home_address.lower() == "back":
