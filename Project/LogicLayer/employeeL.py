@@ -10,7 +10,6 @@ class EmployeeL():
     def get_employee_info(self, ssn):
         return self.data_wrapper.get_employee_info(ssn)
         
-    
     def get_schedule(self, ssn):
         return self.data_wrapper.get_schedule_info(ssn)
     

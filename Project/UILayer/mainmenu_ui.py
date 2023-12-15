@@ -60,10 +60,13 @@ class MainMenu_UI:
                     ssn = input("Enter your social security number: ")
                     employee_info = self.logic_layer.logic_ui_wrapper.get_employee_info(ssn)
                     if employee_info:
+
                         menu = S_UI()
                         _ = menu.input_prompt(ssn)
                     else:
-                        print("Invalid input or user doesn't exist.")
+
+                        print("Invalid input, Number needs to be 10 digits.")
+
             elif command.lower() == "q" or command.lower() == "quit":
                 pass
             else:
