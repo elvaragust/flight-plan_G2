@@ -1,17 +1,14 @@
 from uiLayer.display_ui import Display_UI
-from dataLayer.logic_data_wrapper import LogicDataWrapper
 from logicLayer.logic_ui_wrapper import Logic_Wrapper
-from uiLayer.pm_ui import PM_UI
-from uiLayer.sm_ui import SM_UI
-from uiLayer.s_ui import S_UI
+from uiLayer.planning_manager_ui import PM_UI
+from uiLayer.staff_manager_ui import SM_UI
+from uiLayer.staff_ui import S_UI
 import os
 
 
 class MainMenu_UI:
-    def __init__(self, logic_layer):
-        print("inside UI")
-        self.logic_layer = logic_layer
-        self.logic_layer.logic_ui_wrapper = Logic_Wrapper()
+    def __init__(self):
+        self.logic_ui_wrapper = Logic_Wrapper()
 
     def menu_output(self):
         os.system("cls")
@@ -58,7 +55,7 @@ class MainMenu_UI:
                 ssn = ""
                 while ssn.lower() != "b":
                     ssn = input("Enter your social security number: ")
-                    employee_info = self.logic_layer.logic_ui_wrapper.get_employee_info(ssn)
+                    employee_info = self.logic_ui_wrapper.get_employee_info(ssn)
                     if employee_info:
                         menu = S_UI()
                         _ = menu.input_prompt(ssn)
