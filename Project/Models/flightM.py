@@ -32,3 +32,6 @@ class Flight:
             self.flight_service_manager_ssn,
             self.flight_attendant_ssn
         ]
+    @classmethod
+    def from_row(cls, flight_id, flight_info):
+        return cls(flight_id, *flight_info)

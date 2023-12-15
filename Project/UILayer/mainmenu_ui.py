@@ -1,4 +1,5 @@
 from uiLayer.display_ui import Display_UI
+from dataLayer.logic_data_wrapper import LogicDataWrapper
 from uiLayer.pm_ui import PM_UI
 from uiLayer.sm_ui import SM_UI
 from uiLayer.s_ui import S_UI
@@ -6,9 +7,10 @@ import os
 
 
 class MainMenu_UI:
-    
-    def __init__(self):
+    def __init__(self, data_layer):
         print("inside UI")
+        self.data_layer = data_layer
+        self.data_layer.logic_data_wrapper = LogicDataWrapper()
 
     def menu_output(self):
         os.system("cls")
@@ -55,11 +57,17 @@ class MainMenu_UI:
                 ssn = ""
                 while ssn.lower() != "b":
                     ssn = input("Enter your social security number: ")
-                    if ssn.isdigit() and len(ssn) == 10:
+
+
+                    employee_info = self.data_layer.logic_data_wrapper.get_employee_info(ssn)
+                    if employee_info:
+
                         menu = S_UI()
-                        ssn = menu.input_prompt()
+                        _ = menu.input_prompt(ssn)
                     else:
+
                         print("Invalid input, Number needs to be 10 digits.")
+
             elif command.lower() == "q" or command.lower() == "quit":
                 pass
             else:
