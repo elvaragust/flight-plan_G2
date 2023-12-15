@@ -16,7 +16,7 @@ class PM_UI:
         print(" ".ljust(55), "[1] Register New Plane".ljust(85))
         print(" ".ljust(55), "[2] List Planes".ljust(85))
         print(" ".ljust(55), "[3] Plan New Voyage".ljust(85))
-        print(" ".ljust(55), "[4] See Saved Voyages".ljust(85))
+        print()
         print()
         print()
         print()
@@ -50,12 +50,9 @@ class PM_UI:
                 """Plan New Voyage"""
                 choice = PM_UI()
                 menu_command = choice.register_voyage()
-            elif command == "4":
-                """See Saved Voyages"""
-                choice = PM_UI()
-                menu_command = choice.list_saved_voyages()
             elif command.lower() == "b" or command.lower() == "back" or command.lower() == "h" or command.lower() == "home":
                 print("Goin backwards")
+                command = "b"
             else:
                 print("Invalid command!")
             if menu_command == "b":
@@ -221,13 +218,13 @@ class PM_UI:
                     elif command2 == "h" or command2 == "home":
                         return "b"
             elif command == "2":
-                pot_date1 = input("Enter the Departure date: ")
+                pot_date1 = input("Enter the Departure date (dd/mm/yy): ")
                 if pot_date1.lower() == "b" or pot_date1.lower() == "back":
                     pass
                 else:
                     date1 = pot_date1
             elif command == "3":
-                pot_date2 = input("Enter the Departure date: ")
+                pot_date2 = input("Enter the Departure date (dd/mm/yy): ")
                 if pot_date2.lower() == "b" or pot_date2.lower() == "back":
                     pass
                 else:
@@ -235,13 +232,13 @@ class PM_UI:
             elif command == "4":
                 pass
             elif command == "5":
-                pot_time1 = input("Enter the Departure time: ")
+                pot_time1 = input("Enter the Departure time (hh:mm): ")
                 if pot_time1.lower() == "b" or pot_time1.lower() == "back":
                     pass
                 else:
                     time1 = pot_time1
             elif command == "6":
-                pot_time2 = input("Enter the Departure time: ")
+                pot_time2 = input("Enter the Departure time (hh:mm): ")
                 if pot_time2.lower() == "b" or pot_time2.lower() == "back":
                     pass
                 else:

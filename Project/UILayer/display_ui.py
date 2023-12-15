@@ -330,6 +330,25 @@ class Display_UI:
         print(constants.NAVBAR.center(140))
         boarder.print_footer()
 
+    def print_list_of_employees_working(self, working=""):
+        """Dict{List}: SSN: NAME, RANK, """
+        boarder = Display_UI()
+        boarder.print_header()
+        blabla = {1606982929: ["Gutti", "Flugþjónn", "5812345", "guttifreyr@hotmail.com", "Yes"], 1512682323: ["Jónas", "Farþegi", "7741234", "jonashallgrims@gmail.is", "No"]}
+        if working == "Yes":
+            print(f"-List of Staff Who Are Working Today-".center(140))
+        elif working == "No":
+            print(f"-List of Staff Who Are Not Working Today-".center(140))
+        print(constants.DASH * 140)
+        print("Name".center(34),"|", "SSN".center(20), "|", "Rank".center(19), "|", "Phone Number".center(20), "|", "Email".center(34))
+        print(constants.DASH * 140)
+        for key, value in blabla.items():
+            if value[1] == working:
+                print(value[0].center(34),"|", f"{key}".center(20), "|", value[1].center(19), "|", value[2].center(20), "|", value[3].center(34))
+        boarder.print_footer()
+        print(constants.NAVBAR.center(140))
+        boarder.print_footer()
+
     def print_choose_type_of_employee(self):
         boarder = Display_UI()
         boarder.print_header()
@@ -338,8 +357,8 @@ class Display_UI:
         print(" ".ljust(55), "[1] All Employees".ljust(85))
         print(" ".ljust(55), "[2] Pilots".ljust(85))
         print(" ".ljust(55), "[3] Flight Attendants".ljust(85))
-        print()
-        print()
+        print(" ".ljust(55), "[4] Employees who are working today")
+        print(" ".ljust(55), "[5] Employees who are not working today")
         print()
         print()
         print()
@@ -360,6 +379,8 @@ class Display_UI:
         boarder.print_header()
         print(f"-Airplane List-".center(140))
         print(constants.DASH * 140)
+        print("Eitthvað")
+        print(constants.DASH * 140)
         #for key, value in plane_type.items():
          #   pass
         boarder.print_footer()
@@ -371,7 +392,9 @@ class Display_UI:
         boarder.print_header()
         print("-Saved Voyages-".center(140))
         print(constants.DASH * 140)
-        # for key, value in voyages.items()
+        print("Eitthvað")
+        print(constants.DASH * 140)
+        # for key, value in dict.items()
             #
         boarder.print_footer()
         print(constants.NAVBAR.center(140))
@@ -381,6 +404,12 @@ class Display_UI:
         boarder = Display_UI()
         boarder.print_header()
         print("-Schedule-".center(140))
+        print(constants.DASH * 140)
+        print("Eitthvað")
+        """print(Dagsetning, )"""
+        print(constants.DASH * 140)
+        # for key, value in dict.items()
+            #
         boarder.print_footer()
         print(constants.NAVBAR.center(140))
         boarder.print_footer()

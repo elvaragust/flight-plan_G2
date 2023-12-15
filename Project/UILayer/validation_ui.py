@@ -154,7 +154,7 @@ class ValidationL():
         if ssn == "":
             raise ValueError("SSN cannot be empty")
         
-        elif not ssn.isdigit:
+        elif not ssn.isdigit():
             raise ValueError("Can only be numbers")
         
         elif len(ssn) != 10:
