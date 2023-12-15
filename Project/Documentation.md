@@ -196,11 +196,18 @@
   - [í vinnslu] UI - Guttormur
   - [Í vinnslu] Tengingar - Elvar
   - [Í vinnslu] UI Logic wrapper - Þóra
-  - [Í vinnslu ] Update-a Hönnunarskýrsluna - Margrét
+  - [Í vinnslu] Update-a Hönnunarskýrsluna - Margrét
 - Lokdags
-  - [ ]
+  - [í vinnslu] UI - Guttormur
+  - [Í vinnslu] Tengingar - Elvar
+  - [x] UI Logic wrapper - Þóra
+  - [Í vinnslu] Update-a Hönnunarskýrsluna - Margrét
 ### Vika 3 - Dagur 5
 - Morgunfærsla
-  - [ ]
+  - [x] UI - Guttormur
+  - [Í vinnslu] Tengingar - Elvar
+  - [x] UI Logic wrapper - Þóra
+  - [Í vinnslu] Update-a Hönnunarskýrsluna - Margrét
+  - [ ] myndbandið 
 - Lokdags
   - [ ]
