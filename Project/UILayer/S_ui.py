@@ -1,6 +1,6 @@
-from display_ui import Display_UI
+from uiLayer.display_ui import Display_UI
 import os
-import constants
+from uiLayer import constants
 
 class S_UI:
     

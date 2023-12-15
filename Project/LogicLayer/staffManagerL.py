@@ -1,9 +1,9 @@
-#from import
-#from import
+from dataLayer.logic_data_wrapper import LogicDataWrapper
+
 
 class staffManagerL:
     def __init__(self, data_wrapper):
-        self.data_wrapper = data_wrapper
+        self.data_wrapper = LogicDataWrapper()
 
     def register_employee(self, employee_info):
         self.data_wrapper.create_employee(employee_info)

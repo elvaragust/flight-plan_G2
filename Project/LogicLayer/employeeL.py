@@ -1,13 +1,11 @@
-#from Logic_Data_wrapper import data_layer.retrieve_schedule(ssn)
-
-#employee = {"ssn", [name, rank, email, phone, landl(opt, will have just "" if not put in), licence, address]}
+from dataLayer.logic_data_wrapper import LogicDataWrapper
 
 class EmployeeL():
     def __init__(self, data_wrapper):
-        self.data_wrapper = data_wrapper
+        self.data_wrapper = LogicDataWrapper()
 
-    def create_employee(self, employee):
-        self.data_wrapper.create_voyage(employee)
+    def create_employees(self, employee):
+        self.data_wrapper.create_employee(employee)
         
     def get_employee_info(self, ssn):
         return self.data_wrapper.get_employee_info(ssn)
@@ -25,6 +23,5 @@ class EmployeeL():
         existing_employee = self.data_wrapper.get_employee_info(ssn)
         if not existing_employee:
             return False
-        
         return self.data_wrapper.update_employee(update_info)
         

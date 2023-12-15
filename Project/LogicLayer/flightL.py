@@ -1,6 +1,9 @@
+from dataLayer.logic_data_wrapper import LogicDataWrapper
+
+
 class FlightL():
     def __init__(self, data_wrapper):
-        self.data_wrapper = data_wrapper
+        self.data_wrapper = LogicDataWrapper()
         
     def create_flight(self, flight):
         self.data_wrapper.create_flight(flight)
