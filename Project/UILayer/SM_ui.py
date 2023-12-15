@@ -134,7 +134,7 @@ class SM_UI:
                         command2 = "b"
                     elif command2.lower() == "h" or command2.lower() == "home":
                         return "b"
-       
+        
 
             elif command == "3":
                 pot_email = input("Enter the Email: ")
