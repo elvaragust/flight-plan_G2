@@ -16,8 +16,16 @@ class SM_UI:
         print(" ".ljust(55), "[1] Register New Employee".ljust(85))
         print(" ".ljust(55), "[2] Change Employee Info".ljust(85))
         print(" ".ljust(55), "[3] List Employees".ljust(85))
-        print(" ".ljust(55), "[4] Select Crew On Voyages".ljust(85))
-        print(" ".ljust(55), "[5] See Schedule".ljust(85))
+        print(" ".ljust(55), "[4] Find Employee".ljust(85))
+        print(" ".ljust(55), "[5] Select Crew On Voyages".ljust(85))
+        print(" ".ljust(55), "[6] See Schedule".ljust(85))
+        print()
+        print()
+        print()
+        print()
+        print()
+        print()
+        print()
         print()
         print()
         mainmenu.print_footer()
@@ -35,6 +43,7 @@ class SM_UI:
                 """Register New Employee"""
                 choice = SM_UI()
                 menu_command = choice.register_employee()
+
             elif command == "2":
                 """Change Employee Info"""
                 ssn = input("Enter the Social Security number of an employee: ")
@@ -42,27 +51,41 @@ class SM_UI:
                  #   pass
                 choice = SM_UI()
                 menu_command = choice.change_employee_info()
+
             elif command == "3":
                 """List Employees"""
                 choice = SM_UI()
                 menu_command = choice.list_employees()
+
+            elif command == "4":
+                """Find Employee"""
+                ssn = input("Enter the Social Security number of an employee: ")
+                #if ssn in employee_dict:
+                 #   pass
+                choice = SM_UI()
+                menu_command = choice.find_employee()
+
             elif command == "4":
                 """Select Crew on Voyages"""
                 choice = SM_UI()
                 menu_command = choice.select_crew_on_voyages()
+
             elif command == "5":
                 """See Schedule"""
                 choice = SM_UI()
                 menu_command = choice.see_schedules()
+
             elif command.lower() == "b" or command.lower() == "back":
                 print("Going backwards")
-                break
+
             elif command.lower() == "h" or command.lower() == "home":
-                break
+                command = "b"
+
             else:
                 print("Invalid command!")
+
             if menu_command == "b":
-                break
+                command = "b"
 
     def register_employee(self):
         command = ""
@@ -84,13 +107,21 @@ class SM_UI:
                 if pot_name.lower() == "b" or pot_name.lower() == "back":
                     pass
                 else:
-                    name = pot_name
+                    name = pot_name.capitalize()
             elif command == "2":
-                pot_rank = input("Enter the Rank: ")
-                if pot_rank.lower() == "b" or pot_rank.lower() == "back":
-                    pass
-                else:
-                    rank = pot_rank
+                command2 = ""
+                while command2.lower() != "b" and command2.lower() != "back":
+                    os.system("cls")
+                    menu.print_choose_rank()
+                    command2 = input("Enter your command: ")
+                    if command2 == "1":
+                        rank = "Pilot"
+                        command2 = "b"
+                    elif command2 == "2":
+                        rank = "Flight Attendant"
+                        command2 = "b"
+                    elif command2.lower() == "h" or command2.lower() == "home":
+                        return "b"
             elif command == "3":
                 pot_email = input("Enter the Email: ")
                 if pot_email.lower() == "b" or pot_email.lower() == "back":
@@ -116,17 +147,29 @@ class SM_UI:
                 else:
                     landline = pot_landline
             elif command == "7":
-                pot_plane_license = input("Enter the plane license: ")
-                if pot_plane_license.lower() == "b" or pot_plane_license.lower() == "back":
-                    pass
-                else:
-                    plane_license = pot_plane_license
+                command2 = ""
+                while command2.lower() != "b" and command2.lower() != "back":
+                    os.system("cls")
+                    menu.print_choose_license()
+                    command2 = input("Enter your command: ")
+                    if command2 == "1":
+                        plane_license = constants.PLANE1
+                    elif command2 == "2":
+                        plane_license = constants.PLANE2
+                    elif command2 == "3":
+                        plane_license = constants.PLANE3
+                    elif command2 == "4":
+                        plane_license = constants.PLANE4
+                    elif command2 == "5":
+                        plane_license = constants.PLANE5
+                    elif command2.lower() == "h" or command2.lower() == "home":
+                        return "b"
             elif command == "8":
                 pot_home_address = input("Enter the home address: ")
                 if pot_home_address.lower() == "b" or pot_home_address.lower() == "back":
                     pass
                 else:
-                    home_address = pot_home_address
+                    home_address = pot_home_address.capitalize()
             elif command.lower() == "h" or command.lower() == "home":
                 return "b"
 
@@ -173,8 +216,18 @@ class SM_UI:
                 if pot_home_address.lower() == "b" or pot_home_address.lower() == "back":
                     pass
                 else:
-                    home_address = pot_home_address
+                    home_address = pot_home_address.capitalize()
             elif command.lower() == "h" or command.lower() == "home":
+                return "b"
+            
+    def find_employee(self):
+        command = ""
+        while command.lower() != "b" and command.lower() != "back":
+            os.system("cls")
+            menu = Display_UI()
+            menu.print_find_employee()
+            command = input("Enter your command: ")
+            if command.lower() == "h" or command.lower() == "home":
                 return "b"
             
     def list_employees(self):
