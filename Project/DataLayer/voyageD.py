@@ -3,7 +3,7 @@ from Models.voyageM import Voyage
 
 class VoyageData:
     voyages = {}
-    FILE_NAME = "Project\\DataLayer\\voyage.csv"
+    FILE_NAME = "voyage.csv"
 
     def __init__(self):
         self.load_data_from_file()

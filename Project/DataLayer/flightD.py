@@ -4,7 +4,7 @@ from Models.flightM import Flight
 
 class FlightData:
     flights = {}
-    FILE_NAME = "Project\\DataLayer\\flight.csv"
+    FILE_NAME = "flight.csv"
 
     def __init__(self):
         self.load_data_from_file()

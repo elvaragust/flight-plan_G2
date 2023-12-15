@@ -1,10 +1,13 @@
 
-
 class ValidationL():
     
     def validate_employee_name(self, name):
-        if name == "":
+        name_without_spaces = name.replace(' ', '')
+        if name_without_spaces == "":
             raise ValueError("Name cannot be empty")
+        
+        if not name_without_spaces.isalpha():
+            raise ValueError("Cannot have a number")
         
         elif len(name) > 40:
             raise ValueError("Name cannot be longer than 50 characters")
@@ -14,7 +17,9 @@ class ValidationL():
         
         
     def validate_employee_rank(self, rank):
-        if rank == "":
+        rank_without_spaces = rank.replace(' ', '')
+        
+        if rank_without_spaces == "":
             raise ValueError("Rank cannot be empty")
         
         elif len(rank) > 20:
@@ -45,12 +50,31 @@ class ValidationL():
         elif len(phone) != 7:
             raise ValueError("Phone number should contain 7 numbers")
         
+        elif not phone.isdigit:
+            raise ValueError("Phone numbe rcan only contain digits")
+        
+        else:
+            return True
+        
+    def validate_employee_landline(self, phone):
+        if phone[0] == "+":
+            raise ValueError("Phone number should not have the area code")
+        
+        elif len(phone) != 7:
+            raise ValueError("Phone number should contain 7 numbers")
+        
+        elif not phone.isdigit:
+            raise ValueError("Phone numbe rcan only contain digits")
+        
         else:
             return True
     
     
     def validate_date(self, date):
         date_validation = [int(i) for i in date.split("/")]
+        
+        if not date_validation.isdigit:
+            raise ValueError("Can only be numbers between the /")
         #day
         if date_validation[0] > 31:
             raise ValueError("Day does not exist, need to be (1-31)")
@@ -65,6 +89,9 @@ class ValidationL():
     def validate_time(self, time):
         time_validation = [int(i) for i in time.split(":")]
         
+        if not time_validation.isdigit:
+            raise ValueError("Can only contain numbers between the :")
+        
         if time_validation[0] > 23:
             raise ValueError("Hour does not exist")
         
@@ -73,20 +100,32 @@ class ValidationL():
         
         else:
             return True
-
-    def vaildate_gate(self, gate):
-        if not gate[1].isdigit:
-            raise ValueError("Gate number incorrect")
         
-        elif len(gate) == 3:
-            if not gate[2].isdigit:
-                raise ValueError("Gate number incorrect")
+    def validate_licence(self, pilot_license):
+        licence_without_spaces = pilot_license.replace(' ', '')
         
-        elif gate[0].isdigit:
-            raise ValueError("Gate number incorrect")
+        if licence_without_spaces == "":
+            raise ValueError("Licence cannot be empty")
+        
+        elif len(pilot_license) > 40:
+            raise ValueError("Licence cannot be more than 40 characters")
         
         else:
             return True
+
+#    def vaildate_gate(self, gate):
+#        if not gate[1].isdigit:
+#            raise ValueError("Gate number incorrect")
+        
+#        elif len(gate) == 3:
+#            if not gate[2].isdigit:
+#                raise ValueError("Gate number incorrect")
+        
+#        elif gate[0].isdigit:
+#            raise ValueError("Gate number incorrect")
+        
+#        else:
+#            return True
     
 
     #def vaildate_booked_seats(self, seats):
@@ -98,9 +137,9 @@ class ValidationL():
     #def validate_airport(self, airport):
     #    pass
     
-    def validate_plane_status(self, airplane):
+#    def validate_plane_status(self, airplane):
         # in flight, in repair, on ground 
-        pass       
+#        pass       
         
     def validate_employee_address(self, address):
         if address == "":
@@ -114,8 +153,13 @@ class ValidationL():
     def validate_employee_ssn(self, ssn):
         if ssn == "":
             raise ValueError("SSN cannot be empty")
+        
+        elif not ssn.isdigit:
+            raise ValueError("Can only be numbers")
+        
         elif len(ssn) != 10:
             raise ValueError("SSN must be 10 characters long")
+        
         else:
             return True
 

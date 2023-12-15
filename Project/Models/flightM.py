@@ -15,24 +15,23 @@ class Flight:
         self.flight_service_manager_ssn = flight_service_manager_ssn
         self.flight_attendant_ssn = flight_attendant_ssn
 
-    def serialize(self) -> dict:
-        return {
-            'flight_id': self.flight_id,
-            'voyage_id': self.voyage_id,
-            'flight_number': self.flight_number,
-            'departure_date': self.departure_date,
-            'departure_time': self.departure_time,
-            'arriving_date': self.arriving_date,
-            'arriving_time': self.arriving_time,
-            'from_destination': self.from_destination,
-            'to_destination': self.to_destination,
-            'airplane_name': self.airplane_name,
-            'captain_ssn': self.captain_ssn,
-            'pilot_ssn': self.pilot_ssn,
-            'flight_service_manager_ssn': self.flight_service_manager_ssn,
-            'flight_attendant_ssn': self.flight_attendant_ssn
-        }
-    
+    def serialize(self) -> list:
+        return [
+            self.flight_id,
+            self.voyage_id,
+            self.flight_number,
+            self.departure_date,
+            self.departure_time,
+            self.arriving_date,
+            self.arriving_time,
+            self.from_destination,
+            self.to_destination,
+            self.airplane_name,
+            self.captain_ssn,
+            self.pilot_ssn,
+            self.flight_service_manager_ssn,
+            self.flight_attendant_ssn
+        ]
     @classmethod
     def from_row(cls, flight_id, flight_info):
         return cls(flight_id, *flight_info)

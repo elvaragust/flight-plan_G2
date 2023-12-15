@@ -17,14 +17,5 @@ class Employees:
         self.license = license
         self.address = address
 
-    def serialize(self) -> dict:
-        return {
-            'social_security': self.social_security,
-            'name': self.name,
-            'rank': self.rank.value,
-            'email': self.email,
-            'phone': self.phone,
-            'landline': self.landline,
-            'license': self.license,
-            'address': self.address
-        }
+def serialize(self) -> list:
+    return [self.social_security, self.name, self.rank, self.email, self.phone, self.landline, self.license, self.address]

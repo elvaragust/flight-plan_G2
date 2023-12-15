@@ -1,11 +1,12 @@
 from uiLayer.display_ui import Display_UI
 import os
 from uiLayer import constants
+from uiLayer.validation_ui import ValidationL
 
 class SM_UI:
     
     def __init__(self):
-        pass
+        self.validation = ValidationL()
 
     def menu_output(self):
         os.system("cls")
@@ -74,6 +75,10 @@ class SM_UI:
         landline = ""
         plane_license = ""
         home_address = ""
+        
+        value_list = ["","","","","","",""]
+        employee_create_dict = {}
+        
         while command.lower() != "b" and command.lower() != "back":
             os.system("cls")
             menu = Display_UI()
@@ -84,43 +89,83 @@ class SM_UI:
                 if pot_name.lower() == "b" or pot_name.lower() == "back":
                     pass
                 else:
-                    name = pot_name
+                    if not self.validation.validate_employee_name(pot_name):
+                        pass
+                    else:
+                        name = pot_name
+                        value_list[0] = pot_name
+            
             elif command == "2":
                 pot_rank = input("Enter the Rank: ")
+
                 if pot_rank.lower() == "b" or pot_rank.lower() == "back":
                     pass
                 else:
-                    rank = pot_rank
+                    if not self.validation.validate_employee_rank(pot_rank):
+                        pass
+                    else:
+                        rank = pot_rank
+                        value_list[1] = pot_name
+                        
             elif command == "3":
                 pot_email = input("Enter the Email: ")
+
                 if pot_email.lower() == "b" or pot_email.lower() == "back":
                     pass
                 else:
-                    email = pot_email
+                    if not self.validation.validate_email(pot_email):
+                        pass
+                    else:
+                        email = pot_email
+                        value_list[2] = pot_email
+                        
             elif command == "4":
                 pot_ssn = input("Enter the Social Security Number: ")
                 if pot_ssn.lower() == "b" or pot_ssn.lower() == "back":
                     pass
                 else:
-                    ssn = pot_ssn
+                    if not self.validation.validate_employee_ssn(pot_ssn):
+                        pass
+                    else:
+                        ssn = pot_ssn
+                        employee_create_dict[ssn] = value_list
+                    
             elif command == "5":
-                pot_phone = input("Enter the phone number: ")
+                pot_phone = input("Enter the Phone number: ")
+
                 if pot_phone.lower() == "b" or pot_phone.lower() == "back":
                     pass
                 else:
-                    phone = pot_phone
+                    if not self.validation.validate_employee_rank(pot_email):
+                        pass
+                    else:
+                        email = pot_email
+                        value_list[3] = pot_email
+                        
             elif command == "6":
-                pot_landline = input("Enter the landline number: ")
+                pot_landline = input("Enter the Landline Number: ")
+
                 if pot_landline.lower() == "b" or pot_landline.lower() == "back":
                     pass
                 else:
-                    landline = pot_landline
+                    if not self.validation.validate_employee_landline(pot_landline):
+                        pass
+                    else:
+                        landline = pot_landline
+                        value_list[4] = pot_landline
+                        
             elif command == "7":
-                pot_plane_license = input("Enter the plane license: ")
-                if pot_plane_license.lower() == "b" or pot_plane_license.lower() == "back":
+                pot_licence = input("Enter the Plane Licence: ")
+
+                if pot_licence.lower() == "b" or pot_licence.lower() == "back":
                     pass
                 else:
-                    plane_license = pot_plane_license
+                    if not self.validation.validate_(pot_licence):
+                        pass
+                    else:
+                        plane_license = pot_licence
+                        value_list[5] = pot_licence
+                        
             elif command == "8":
                 pot_home_address = input("Enter the home address: ")
                 if pot_home_address.lower() == "b" or pot_home_address.lower() == "back":
