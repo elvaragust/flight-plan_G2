@@ -13,9 +13,9 @@ class S_UI:
         mainmenu.print_header()
         print("-Staff Menu-".center(140))
         print()
-        print(" " * 40, "[1] See Shift Plan".ljust(100))
-        print(" " * 40, "[2] Change Personal Information".ljust(100))
-        print(" " * 40, "[3] Register Leave/Vacation".ljust(100))
+        print(" ".ljust(55), "[1] See Shift Plan".ljust(85))
+        print(" ".ljust(55), "[2] Change Personal Information".ljust(85))
+        print()
         print()
         print()
         print()
@@ -26,83 +26,74 @@ class S_UI:
         mainmenu.print_footer()
 
     def input_prompt(self):
-        while True:
+        menu_command = ""
+        command = ""
+        while command.lower() != "b" and command.lower() != "back":
             self.menu_output()
             command = input("Enter your command: ")
             command = command.lower()
             if command == "1":
                 """See Shift Plan"""
                 choice = S_UI()
-                choice.see_schedule()
+                menu_command = choice.see_schedule()
             elif command == "2":
                 """Change Personal Information"""
                 choice = S_UI()
-                choice.change_basic_info()
-            elif command == "3":
-                """Register Leave/Vacation"""
-                choice = S_UI()
-                choice.request_time_off()
-            elif command == "b":
+                menu_command = choice.change_basic_info()
+            elif command.lower() == "b" or command.lower() == "back":
                 print("Goin backwards")
+                return "b"
+            elif command.lower() == "h" or command.lower() == "home":
                 return "b"
             else:
                 print("Invalid command!")
+            if menu_command == "b":
+                return "b"
 
     def change_basic_info(self):
         command = ""
-        while command != "b":
+        while command != "b" and command != "back":
             os.system("cls")
             menu = Display_UI()
             menu.print_edit_staff_information_staff()
             command = input("Enter your command: ")
             if command == "1":
                 pot_email = input("Enter your Email: ")
-                if pot_email.lower() == "b":
+                if pot_email.lower() == "b" or pot_email.lower() == "back":
                     pass
                 else:
                     email = pot_email
             elif command == "2":
                 pot_phone = input("Enter your phone number: ")
-                if pot_phone.lower() == "b":
+                if pot_phone.lower() == "b" or pot_phone.lower() == "back":
                     pass
                 else:
                     phone = pot_phone
             elif command == "3":
                 pot_landline = input("Enter your landline number: ")
-                if pot_landline.lower() == "b":
+                if pot_landline.lower() == "b" or pot_landline.lower() == "back":
                     pass
                 else:
                     landline = pot_landline
             elif command == "4":
                 pot_home_address = input("Enter your home address: ")
-                if pot_home_address.lower() == "b":
+                if pot_home_address.lower() == "b" or pot_home_address.lower() == "back":
                     pass
                 else:
                     home_address = pot_home_address
+            elif command.lower() == "h" or command.lower() == "home":
+                return "b"
         
 
     def see_schedule(self):
         command = ""
-        while command != "b":
+        while command.lower() != "b" and command.lower() != "back":
             os.system("cls")
             menu = Display_UI()
-            menu.print_header()
-            print()
-            menu.print_footer()
-            print(constants.NAVBAR.center(140))
-            menu.print_footer()
+            menu.print_see_schedule()
             command = input("Enter your command: ")
+            if command.lower() == "h" or command.lower() == "home":
+                return "b"
 
-    def request_time_off(self):
-        command = ""
-        while command != "b":
-            os.system("cls")
-            menu = Display_UI()
-            menu.print_header()
-            print()
-            menu.print_footer()
-            print(constants.NAVBAR.center(140))
-            menu.print_footer()
-            command = input("Enter your command: ")
-
+   
 
