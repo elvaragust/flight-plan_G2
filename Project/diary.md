@@ -210,4 +210,8 @@
   - [Í vinnslu] Update-a Hönnunarskýrsluna - Margrét
   - [ ] myndbandið 
 - Lokdags
-  - [ ]
+  - [x] UI - Guttormur
+  - [x] Tengingar - Elvar
+  - [x] UI Logic wrapper - Þóra
+  - [x] Update-a Hönnunarskýrsluna - Margrét
+  - [x] myndbandið

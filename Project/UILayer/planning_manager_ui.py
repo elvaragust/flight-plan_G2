@@ -8,6 +8,7 @@ class PM_UI:
         pass
 
     def menu_output(self):
+        """Prints the planning manager menu"""
         os.system("cls")
         mainmenu = Display_UI()
         mainmenu.print_header()
@@ -33,6 +34,7 @@ class PM_UI:
         mainmenu.print_footer()
 
     def input_prompt(self):
+        """Prompts the user for input and calls the appropriate functions"""
         menu_command = ""
         command = ""
         while command.lower() != "b" and command.lower() != "back":
@@ -61,6 +63,7 @@ class PM_UI:
 
 
     def register_airplane(self):
+        """Prints the register airplane menu"""
         command = ""
         name = ""
         plane_type = ""
@@ -181,6 +184,7 @@ class PM_UI:
 
     
     def register_voyage(self):
+        """Prints the register voyage menu"""
         command = ""
         departure = "ICELAND"
         destination = ""
@@ -262,6 +266,7 @@ class PM_UI:
         pass
 
     def list_saved_voyages(self):
+        """Prints the list of saved voyages menu"""
         command = ""
         while command.lower() != "b" and command.lower() != "back":
             os.system("cls")

@@ -7,6 +7,7 @@ class Display_UI:
         self.logic_wrapper = Logic_Wrapper()
 
     def print_header(self):
+        """Prints the header of the program"""
         print(constants.EQUALS * 140)
         print(" " * 51, "_   __        _   __   ___     _", " " * 55)
         print(" " * 50, "/ | / /____ _ / | / /  /   |   (_)_____", " " * 49)
@@ -19,10 +20,12 @@ class Display_UI:
         print()
 
     def print_footer(self):
+        """ Prints the footer of the program"""
         print(constants.DASH * 140)
 
 
     def print_staff_register(self, name="", rank="" , email="", ssn="", phone="", landline="", license="", home_address=""):
+        """Prints the staff register when registering new staff"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Register New Employee-".center(140))
@@ -47,6 +50,7 @@ class Display_UI:
         boarder.print_footer()
 
     def print_edit_staff_information_management(self, name="", rank="" , email="", ssn="", phone="", landline="", license="", home_address=""):
+        """Prints the staff register when editing staff information for management"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Edit Employees Information-".center(140))
@@ -71,6 +75,7 @@ class Display_UI:
         boarder.print_footer()
 
     def print_choose_rank(self):
+        """Prints the choose rank menu"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Choose A Rank-".center(140))
@@ -95,6 +100,7 @@ class Display_UI:
         boarder.print_footer()
 
     def print_edit_staff_information_staff(self, name="", rank="" , email="", ssn="", phone="", landline="", license="", home_address=""):
+        """prints the staff register when editing staff information for staff"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Edit Your Information-".center(140))
@@ -144,6 +150,7 @@ class Display_UI:
         boarder.print_footer()
 
     def print_plane_register(self, name="", type="", manufacturer="", seats=""):
+        """Prints the plane register when registering new plane"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Register New Plane-".center(140))
@@ -168,6 +175,7 @@ class Display_UI:
         boarder.print_footer()
 
     def print_choose_type_of_plane_register(self):
+        """Prints the choose type of plane menu when registering new plane"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Choose The Type Of Plane You Want To Register-".center(140))
@@ -192,6 +200,7 @@ class Display_UI:
         boarder.print_footer()
 
     def print_choose_license(self):
+        """Prints the choose license menu when registering new employee"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Choose A License-".center(140))
@@ -216,6 +225,7 @@ class Display_UI:
         boarder.print_footer()
 
     def print_choose_type_of_plane_list(self):
+        """Prints the choose type of plane menu when listing planes"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Choose The Type Of Plane You Want To List-".center(140))
@@ -241,6 +251,7 @@ class Display_UI:
 
 
     def print_register_new_voyage(self, departure="", destination="", date1="", date2="", time1="", time2="", plane=""):
+        """Prints the register new voyage menuu"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Register New Voyage-".center(140))
@@ -265,6 +276,7 @@ class Display_UI:
         boarder.print_footer()
 
     def print_select_destination(self):
+        """Prints the select destination menu"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Select the Voyage's Destination-".center(140))
@@ -290,6 +302,7 @@ class Display_UI:
 
     
     def print_select_crew(self, captain="", pilot="", cfa="", flight_attendant="", departure="", destination="", date1="", date2="", time1="", time2=""):
+        """Prints the select crew menu"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Register Crew On Voyage-".center(140))
@@ -315,6 +328,7 @@ class Display_UI:
 
 
     def print_list_of_employees(self):
+        """Prints the list of employees	"""
         """Dict{List}: SSN: NAME, RANK, """
         boarder = Display_UI()
         boarder.print_header()
@@ -333,6 +347,7 @@ class Display_UI:
 
     
     def print_list_of_pilots(self):
+        """Prints the list of pilots"""
         boarder = Display_UI()
         boarder.print_header()
         print(f"-List of Employees-".center(140))
@@ -350,6 +365,7 @@ class Display_UI:
         boarder.print_footer()
 
     def print_list_of_flight_attendant(self):
+        """Prints the list of flight attendants"""
         boarder = Display_UI()
         boarder.print_header()
         print(f"-List of Employees-".center(140))
@@ -368,6 +384,7 @@ class Display_UI:
 
 
     def print_choose_type_of_employee(self):
+        """Prints the choose type of employees list menu"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Choose Type Of Employee To List-".center(140))
@@ -392,6 +409,7 @@ class Display_UI:
         boarder.print_footer()
 
     def print_list_of_planes(self):
+        """Prints the list of planes"""
         """Dict{List}: NAME: TYPE, MANUFACTURER, SEATS"""
         boarder = Display_UI()
         boarder.print_header()
@@ -406,6 +424,7 @@ class Display_UI:
         boarder.print_footer()
         
     def print_list_of_saved_voyages(self):
+        """Prints the list of saved voyages"""
         boarder = Display_UI()
         boarder.print_header()
         print("-Saved Voyages-".center(140))
@@ -430,6 +449,7 @@ class Display_UI:
         boarder.print_footer()"""
 
     def print_see_schedule(self, ssn):
+        """Prints the schedule of the employee"""
         boarder = Display_UI()
         boarder.print_header()
         print(f"-Schedule {ssn}-".center(140))
@@ -446,6 +466,7 @@ class Display_UI:
         boarder.print_footer()
 
     def print_existing_voyages(self):
+        """Prints the existing voyages"""
         boarder = Display_UI()
         boarder.print_header()
         voyages_dict = {"1": ["Iceland", "Nuuk", "14/11/21", "17:00", "14/11/21", "21:00"], "2": ["Iceland", "Tingwall", "16/11/21", "14:00", "16/11/21", "17:00"]}
