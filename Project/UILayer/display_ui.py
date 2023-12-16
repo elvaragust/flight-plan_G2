@@ -350,7 +350,7 @@ class Display_UI:
         """Prints the list of pilots"""
         boarder = Display_UI()
         boarder.print_header()
-        print(f"-List of Employees-".center(140))
+        print(f"-List of Pilots-".center(140))
         print(constants.DASH * 140)
         print("Name".center(34),"|", "SSN".center(20), "|", "Rank".center(19), "|", "Phone Number".center(20), "|", "Email".center(34))
         print(constants.DASH * 140)
@@ -368,7 +368,7 @@ class Display_UI:
         """Prints the list of flight attendants"""
         boarder = Display_UI()
         boarder.print_header()
-        print(f"-List of Employees-".center(140))
+        print(f"-List of Flight Attendants-".center(140))
         print(constants.DASH * 140)
         print("Name".center(34),"|", "SSN".center(20), "|", "Rank".center(19), "|", "Phone Number".center(20), "|", "Email".center(34))
         print(constants.DASH * 140)
@@ -505,7 +505,7 @@ class Display_UI:
     def get_employees_working(self):
         boarder = Display_UI()
         boarder.print_header()
-        print(f"-Employees not working-".center(140))
+        print(f"-Employees working-".center(140))
         print()
         day = input("Enter date &&/&&/&&&&: ")
         print(constants.DASH * 140)
