@@ -69,4 +69,4 @@ class MainMenu_UI:
             else:
                 print("Invalid command!")
         os.system("cls")
-        print("See you Later!")
+        print("See You Later!")
