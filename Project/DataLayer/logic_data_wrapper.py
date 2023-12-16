@@ -98,8 +98,6 @@ class LogicDataWrapper:
     
 
 
-
-
     def create_flight(self, flight_info):
         """ creates an flight and saves it to the csv file
         

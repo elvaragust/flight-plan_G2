@@ -1,12 +1,13 @@
 
 from logicLayer.employeeL import EmployeeL
 from logicLayer.airplaneL import AirplaneL
+from logicLayer.flightL import FlightL
 
 class Logic_Wrapper:
     def __init__(self) -> None:
         self.employee_logic = EmployeeL()
         self.airplane_logic = AirplaneL()
-
+        self.flight_logic = FlightL()
 
     def create_employee(self, employee):
         """ takes in employee object and forwarsd it to the data Layer
@@ -18,7 +19,7 @@ class Logic_Wrapper:
         """
         return self.employee_logic.create_employees(employee)
 
-    def get_all_employees(self):
+    def list_all_employees(self):
         """ gets all employees
         
         args: None
@@ -26,7 +27,7 @@ class Logic_Wrapper:
         returns: list of all employees
         
         """
-        return self.employee_logic.get_all_employees()
+        return self.employee_logic.list_all_employees()
 
     def edit_employee(self, employee):
         """ takes in employee object and forwarsd it to the data Layer to edit
@@ -130,3 +131,9 @@ class Logic_Wrapper:
         
         return self.voyage.create_voyage(voyage)
 
+    
+    def get_employees_not_working(self, day):
+       return self.flight_logic.get_employees_not_working(day)
+    
+    def get_employees_working(self, day):
+       return self.flight_logic.get_employees_working(day)

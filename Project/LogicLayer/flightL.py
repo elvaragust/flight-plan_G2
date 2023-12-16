@@ -79,3 +79,28 @@ class FlightL():
 
         employees_not_working = [employee for employee in employees if employee['SSN'] not in working_employees]
         return employees_not_working
+    
+    def get_employees_working(self, day):
+        """ finds an employee by ssn and returns it
+        
+        args: ssn of the employee
+        
+        returns: employee object
+        
+        """
+        day = datetime.strptime(day, '%d/%m/%Y')
+        flights = self.data_wrapper.get_all_flights()
+        employees = self.data_wrapper.get_all_employees()
+
+        working_employees = set()
+        for flight in flights:
+            if 'DepartureDate' in flight:
+                flight_day = datetime.strptime(flight['DepartureDate'], '%d/%m/%Y')
+                if flight_day.date() == day.date():
+                    working_employees.add(flight['CaptainSSN'])
+                    working_employees.add(flight['PilotSSN'])
+                    working_employees.add(flight['Flight_service_managerSSN'])
+                    working_employees.add(flight['Flight_AttendantSSN'])
+
+        employees_not_working = [employee for employee in employees if employee['SSN'] in working_employees]
+        return employees_not_working

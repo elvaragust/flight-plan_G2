@@ -481,3 +481,43 @@ class Display_UI:
         boarder.print_footer()
         print(constants.NAVBAR.center(140))
         boarder.print_footer()
+
+    def get_employees_not_working(self):
+        boarder = Display_UI()
+        boarder.print_header()
+        print(f"-Employees not working-".center(140))
+        print()
+        day = input("Enter date &&/&&/&&&&: ")
+        print(constants.DASH * 140)
+        print("Name".center(30),"|", "SSN".center(15), "|", "Rank".center(25), "|", "Licence".center(35), "|", "Phone Number".center(15))
+        print(constants.DASH * 140)
+        employees_not_working = self.logic_wrapper.get_employees_not_working(day)
+        for employee in employees_not_working:
+
+            if employee['licence'] == " ":
+                print(employee['Name'].ljust(30),"|", employee['SSN'].center(15), "|", employee['Rank'].ljust(25), "|", "N/A".ljust(35), "|", employee['PhoneNumber'].center(15))
+            else:
+                print(employee['Name'].ljust(30),"|", employee['SSN'].center(15), "|", employee['Rank'].ljust(25), "|", employee['licence'].ljust(35), "|", employee['PhoneNumber'].center(15))
+        boarder.print_footer()
+        print(constants.NAVBAR.center(140))
+        boarder.print_footer()
+
+    def get_employees_working(self):
+        boarder = Display_UI()
+        boarder.print_header()
+        print(f"-Employees not working-".center(140))
+        print()
+        day = input("Enter date &&/&&/&&&&: ")
+        print(constants.DASH * 140)
+        print("Name".center(30),"|", "SSN".center(15), "|", "Rank".center(25), "|", "Licence".center(35), "|", "Phone Number".center(15))
+        print(constants.DASH * 140)
+        employees_working = self.logic_wrapper.get_employees_working(day)
+        for employee in employees_working:
+
+            if employee['licence'] == " ":
+                print(employee['Name'].ljust(30),"|", employee['SSN'].center(15), "|", employee['Rank'].ljust(25), "|", "N/A".ljust(35), "|", employee['PhoneNumber'].center(15))
+            else:
+                print(employee['Name'].ljust(30),"|", employee['SSN'].center(15), "|", employee['Rank'].ljust(25), "|", employee['licence'].ljust(35), "|", employee['PhoneNumber'].center(15))
+        boarder.print_footer()
+        print(constants.NAVBAR.center(140))
+        boarder.print_footer()

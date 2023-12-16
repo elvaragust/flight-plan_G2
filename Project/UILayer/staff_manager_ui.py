@@ -521,7 +521,7 @@ class SM_UI:
                 command2 = ""
                 while command2.lower() != "b" and command2.lower() != "back":
                     os.system("cls")
-                    menu.print_list_of_employees_working("Yes")
+                    menu.get_employees_working()
                     command2 = input("Enter your command: ")
                     if command2.lower() == "h" or command2.lower() == "home":
                         return "b"
@@ -529,7 +529,7 @@ class SM_UI:
                 command2 = ""
                 while command2.lower() != "b" and command2.lower() != "back":
                     os.system("cls")
-                    menu.print_list_of_employees_working("No")
+                    menu.get_employees_not_working()
                     command2 = input("Enter your command: ")
                     if command2.lower() == "h" or command2.lower() == "home":
                         return "b"
